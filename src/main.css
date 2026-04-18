@@ -1,0 +1,237 @@
+@import "tailwindcss";
+
+/* ============================================================
+   Design tokens — replaces the old tailwind.config colors/fonts.
+   In Tailwind v4 these live in CSS as @theme variables.
+   Every `--color-X` becomes usable as `bg-X`, `text-X`, `border-X`, etc.
+   ============================================================ */
+@theme {
+  --color-cream: #F2ECE0;
+  --color-paper: #F8F3E8;
+  --color-bone: #EBE3D2;
+  --color-moss: #6B7454;
+  --color-moss-dark: #4A5139;
+  --color-forest: #2B3320;
+  --color-honey: #E8B75A;
+  --color-honey-dark: #C28A2E;
+  --color-ink: #2B2418;
+  --color-stone: #6B6454;
+
+  --font-display: "Fraunces", "Noto Serif TC", serif;
+  --font-serif: "Noto Serif TC", "Fraunces", serif;
+}
+
+/* ============================================================
+   Global base styles
+   ============================================================ */
+html {
+  scroll-behavior: smooth;
+  /* Offset for the fixed 80px nav when jumping to #anchors */
+  scroll-padding-top: 5rem;
+}
+
+body {
+  font-family: var(--font-serif);
+  background: var(--color-cream);
+  color: var(--color-ink);
+  -webkit-font-smoothing: antialiased;
+  font-feature-settings: "palt"; /* proportional CJK metrics */
+}
+
+.font-display {
+  font-family: var(--font-display);
+  font-optical-sizing: auto;
+}
+
+/* ============================================================
+   Paper grain overlay — SVG turbulence noise
+   ============================================================ */
+.grain::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+  opacity: 0.035;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><filter id='n'><feTurbulence baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+}
+
+/* ============================================================
+   Scroll-reveal — elements fade+rise as they enter viewport.
+   Controlled by IntersectionObserver in main.js.
+   ============================================================ */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition:
+    opacity 0.9s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.reveal.in {
+  opacity: 1;
+  transform: translateY(0);
+}
+.reveal-d1 { transition-delay: 0.1s; }
+.reveal-d2 { transition-delay: 0.2s; }
+.reveal-d3 { transition-delay: 0.3s; }
+.reveal-d4 { transition-delay: 0.4s; }
+
+/* ============================================================
+   Hero image + section accent images
+   Paths are relative to /src/main.css which Vite processes.
+   Vite will rewrite ../images/... to hashed asset URLs.
+   ============================================================ */
+.hero-img {
+  background-image:
+    linear-gradient(to bottom right, rgba(43, 51, 32, 0.25), rgba(43, 36, 24, 0.55)),
+    url('../images/hero.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.pharmacist-img {
+  background-image: url('../images/pharmacist.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.article-1 {
+  background-image: url('../images/article-1.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.article-2 {
+  background-image: url('../images/article-2.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.article-3 {
+  background-image: url('../images/article-3.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+/* ============================================================
+   Nav — frosted glass blur
+   ============================================================ */
+.nav-blur {
+  backdrop-filter: blur(12px) saturate(1.4);
+  -webkit-backdrop-filter: blur(12px) saturate(1.4);
+  background: rgba(242, 236, 224, 0.85);
+}
+
+/* ============================================================
+   Mobile menu slide-down
+   ============================================================ */
+.mobile-menu {
+  transform: translateY(-100%);
+  transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.mobile-menu.open {
+  transform: translateY(0);
+}
+
+/* Vertical editorial label */
+.vertical-label {
+  writing-mode: vertical-rl;
+  letter-spacing: 0.3em;
+}
+
+/* ============================================================
+   Hero stagger animation
+   ============================================================ */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(32px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.anim-1 { animation: fadeUp 1.2s cubic-bezier(0.22, 1, 0.36, 1) 0.30s both; }
+.anim-2 { animation: fadeUp 1.2s cubic-bezier(0.22, 1, 0.36, 1) 0.55s both; }
+.anim-3 { animation: fadeUp 1.2s cubic-bezier(0.22, 1, 0.36, 1) 0.80s both; }
+.anim-4 { animation: fadeUp 1.2s cubic-bezier(0.22, 1, 0.36, 1) 1.05s both; }
+
+/* ============================================================
+   Buttons
+   ============================================================ */
+.btn-primary {
+  transition: all 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px -10px rgba(232, 183, 90, 0.55);
+}
+.btn-ghost {
+  transition: all 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.btn-ghost:hover {
+  background: rgba(242, 236, 224, 0.12);
+}
+
+/* ============================================================
+   Service card
+   ============================================================ */
+.svc-card {
+  transition: all 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.svc-card:hover {
+  transform: translateY(-4px);
+}
+.svc-card:hover .svc-icon-bg {
+  background: var(--color-honey);
+}
+.svc-icon-bg {
+  transition: background 0.4s ease;
+}
+
+/* ============================================================
+   Article card
+   ============================================================ */
+.article-card {
+  transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.article-card:hover {
+  transform: translateY(-4px);
+}
+.article-card:hover .article-img-wrap {
+  transform: scale(1.03);
+}
+.article-img-wrap {
+  transition: transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* ============================================================
+   Underline link — expands from right→left on hover
+   ============================================================ */
+.link-u {
+  position: relative;
+}
+.link-u::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 1px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.link-u:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/* ============================================================
+   Reduced motion — respect user preference
+   ============================================================ */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .reveal,
+  .reveal.in,
+  .anim-1, .anim-2, .anim-3, .anim-4 {
+    opacity: 1 !important;
+    transform: none !important;
+    animation: none !important;
+    transition: none !important;
+  }
+}
