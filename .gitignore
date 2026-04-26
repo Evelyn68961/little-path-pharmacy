@@ -1,5 +1,8 @@
-node_modules/ 
-dist/ 
-.DS_Store 
-Thumbs.db 
+node_modules/
+dist/
+.DS_Store
+Thumbs.db
 .vscode/
+
+# Auto-generated article pages — source of truth is articles/*.md
+articles/*.html
