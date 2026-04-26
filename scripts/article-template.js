@@ -24,17 +24,17 @@ function renderNav() {
       </svg>
       <span class="font-display text-xl md:text-2xl font-medium text-ink tracking-tight">小徑<span class="font-display italic text-moss text-lg ml-1">Little Path</span></span>
     </a>
-    <div class="hidden md:flex items-center gap-6 text-sm tracking-wide">
+    <div class="hidden lg:flex items-center gap-6 text-sm tracking-wide">
       ${NAV_LINKS.map(l => `<a href="${l.href}" class="link-u ${l.active ? 'nav-active ' : ''}text-stone hover:text-ink">${l.label}</a>`).join('\n      ')}
       <a href="#contact" class="btn-primary bg-ink text-cream px-5 py-2.5 rounded-full text-sm">LINE 諮詢</a>
     </div>
-    <button id="hamburger" class="md:hidden w-10 h-10 flex flex-col items-center justify-center gap-1.5" aria-label="Menu" aria-expanded="false" aria-controls="mobileMenu">
+    <button id="hamburger" class="lg:hidden w-10 h-10 flex flex-col items-center justify-center gap-1.5" aria-label="Menu" aria-expanded="false" aria-controls="mobileMenu">
       <span class="w-6 h-px bg-ink transition-transform duration-300"></span>
       <span class="w-6 h-px bg-ink transition-opacity duration-300"></span>
       <span class="w-6 h-px bg-ink transition-transform duration-300"></span>
     </button>
   </div>
-  <div id="mobileMenu" class="mobile-menu md:hidden fixed top-20 left-0 right-0 bg-cream border-t border-ink/10 px-6 py-8">
+  <div id="mobileMenu" class="mobile-menu lg:hidden fixed top-20 left-0 right-0 bg-cream border-t border-ink/10 px-6 py-8">
     <div class="flex flex-col gap-6 text-lg">
       ${NAV_LINKS.map(l => `<a href="${l.href}" class="mobile-link text-stone">${l.label}</a>`).join('\n      ')}
       <a href="#contact" class="mobile-link btn-primary bg-ink text-cream px-6 py-3 rounded-full text-center text-base">LINE 諮詢</a>
@@ -56,7 +56,7 @@ function renderRelated(current, all) {
 <section class="relative py-20 md:py-28 px-6 md:px-10 bg-paper">
   <div class="max-w-7xl mx-auto">
     <p class="reveal text-xs tracking-[0.3em] uppercase text-honey-dark mb-8">— 也許您也想讀 / Related Reading</p>
-    <div class="grid md:grid-cols-3 gap-6 md:gap-8">
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
       ${others.map((a, i) => `
       <a href="/articles/${a.slug}.html" class="article-card reveal${i ? ' reveal-d' + i : ''} block">
         <p class="text-xs tracking-widest uppercase text-honey-dark mb-3">${a.frontmatter.category} · ${a.frontmatter.readTime} min read</p>
