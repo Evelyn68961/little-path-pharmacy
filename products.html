@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>店內品項 · 小徑藥局 Little Path</title>
+<meta name="description" content="架上的日常與安心 — 感冒退燒、保健食品、母嬰用品、醫療器材、傷口照護、皮膚保養。" />
+<meta property="og:title" content="店內品項 · 小徑藥局" />
+<meta property="og:type" content="website" />
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&family=Klee+One:wght@400;600&family=Noto+Serif+TC:wght@400;500;600&display=swap" rel="stylesheet">
+<script type="module" src="/src/main.js"></script>
+</head>
+
+<body class="grain">
+
+<nav id="nav" class="fixed top-0 left-0 right-0 z-50 nav-blur">
+  <div class="max-w-7xl mx-auto px-6 md:px-10 h-20 flex items-center justify-between">
+    <a href="/" class="flex items-center gap-2.5">
+      <svg width="26" height="26" viewBox="0 0 32 32" fill="none" class="text-honey-dark">
+        <path d="M4 28 Q 12 22, 16 14 T 28 4" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+        <circle cx="28" cy="4" r="2.5" fill="#6B7454"/>
+        <circle cx="4" cy="28" r="2.5" fill="currentColor"/>
+      </svg>
+      <span class="font-display text-xl md:text-2xl font-medium text-ink tracking-tight">小徑<span class="font-display italic text-moss text-lg ml-1">Little Path</span></span>
+    </a>
+    <div class="hidden md:flex items-center gap-6 text-sm tracking-wide">
+      <a href="/about.html" class="link-u text-stone hover:text-ink">關於藥師</a>
+      <a href="/services.html" class="link-u text-stone hover:text-ink">服務項目</a>
+      <a href="/clinics.html" class="link-u text-stone hover:text-ink">合作診所</a>
+      <a href="/products.html" class="link-u nav-active text-stone hover:text-ink">店內品項</a>
+      <a href="/regulars.html" class="link-u text-stone hover:text-ink">老朋友專區</a>
+      <a href="/corner.html" class="link-u text-stone hover:text-ink">健康小角落</a>
+      <a href="/visit.html" class="link-u text-stone hover:text-ink">來訪路徑</a>
+      <a href="#contact" class="btn-primary bg-ink text-cream px-5 py-2.5 rounded-full text-sm">LINE 諮詢</a>
+    </div>
+    <button id="hamburger" class="md:hidden w-10 h-10 flex flex-col items-center justify-center gap-1.5" aria-label="Menu" aria-expanded="false" aria-controls="mobileMenu">
+      <span class="w-6 h-px bg-ink transition-transform duration-300"></span>
+      <span class="w-6 h-px bg-ink transition-opacity duration-300"></span>
+      <span class="w-6 h-px bg-ink transition-transform duration-300"></span>
+    </button>
+  </div>
+  <div id="mobileMenu" class="mobile-menu md:hidden fixed top-20 left-0 right-0 bg-cream border-t border-ink/10 px-6 py-8">
+    <div class="flex flex-col gap-6 text-lg">
+      <a href="/about.html" class="mobile-link text-stone">關於藥師</a>
+      <a href="/services.html" class="mobile-link text-stone">服務項目</a>
+      <a href="/clinics.html" class="mobile-link text-stone">合作診所</a>
+      <a href="/products.html" class="mobile-link text-stone">店內品項</a>
+      <a href="/regulars.html" class="mobile-link text-stone">老朋友專區</a>
+      <a href="/corner.html" class="mobile-link text-stone">健康小角落</a>
+      <a href="/visit.html" class="mobile-link text-stone">來訪路徑</a>
+      <a href="#contact" class="mobile-link btn-primary bg-ink text-cream px-6 py-3 rounded-full text-center text-base">LINE 諮詢</a>
+    </div>
+  </div>
+</nav>
+
+<main>
+
+<!-- PAGE HERO -->
+<section class="pt-32 md:pt-40 pb-16 md:pb-24 px-6 md:px-10 bg-paper">
+  <div class="max-w-7xl mx-auto grid md:grid-cols-12 gap-8 md:gap-16 items-end">
+    <div class="md:col-span-8">
+      <p class="text-xs tracking-[0.3em] uppercase text-honey-dark mb-6">— Page 03 / 店內品項</p>
+      <h1 class="font-display font-light text-5xl md:text-6xl lg:text-7xl text-ink leading-[1.05]">
+        架上的<br/>
+        <span class="italic text-moss-dark">日常與安心。</span>
+      </h1>
+    </div>
+    <div class="md:col-span-4 md:pb-4">
+      <p class="text-stone leading-[1.95] text-base md:text-lg">
+        從感冒備藥到家中長輩的醫療器材，我們挑的，都是自己也會用、敢推薦給家人的牌子。下面列出六大類，每類附幾個我們長期回購的品牌。
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- 6 CATEGORIES (DETAILED) -->
+<section class="relative py-20 md:py-28 px-6 md:px-10">
+  <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-6 md:gap-8">
+
+    <article class="reveal bg-paper border border-ink/8 rounded-sm p-8 md:p-10">
+      <div class="w-12 h-12 rounded-full bg-honey/30 flex items-center justify-center mb-6">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2B2418" stroke-width="1.5"><path d="M14 14.76V3.5a2.5 2.5 0 10-5 0v11.26a4.5 4.5 0 105 0z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <p class="font-display italic text-honey-dark text-sm mb-2">— Category 01</p>
+      <h2 class="font-display text-2xl md:text-3xl text-ink mb-4">感冒・退燒</h2>
+      <p class="text-stone text-sm md:text-base leading-[1.9] mb-6">換季備藥、孩子發燒、上班族喉嚨痛 — 這個區塊賣得最快，所以更要把品質顧好。</p>
+      <p class="text-xs tracking-widest uppercase text-honey-dark mb-2">常備品項</p>
+      <ul class="text-stone text-sm leading-[1.9] space-y-1">
+        <li>· 退燒貼（小林製藥 · 三層防護）</li>
+        <li>· 普拿疼系列 / 斯斯感冒膠囊</li>
+        <li>· Strepsils 喉糖、龍角散</li>
+        <li>· 醫療口罩（中衛 · 雙鋼印）</li>
+        <li>· 體溫計（百靈 · 紅外線額溫）</li>
+      </ul>
+    </article>
+
+    <article class="reveal reveal-d1 bg-paper border border-ink/8 rounded-sm p-8 md:p-10">
+      <div class="w-12 h-12 rounded-full bg-honey/30 flex items-center justify-center mb-6">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2B2418" stroke-width="1.5"><path d="M12 2C7 7 7 13 12 22c5-9 5-15 0-20zM12 11v11" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <p class="font-display italic text-honey-dark text-sm mb-2">— Category 02</p>
+      <h2 class="font-display text-2xl md:text-3xl text-ink mb-4">保健食品・維他命</h2>
+      <p class="text-stone text-sm md:text-base leading-[1.9] mb-6">我們不過度推銷。如果三餐均衡，可能根本不用買。但若您有特定需求，這幾個牌子是我們自己也在吃的。</p>
+      <p class="text-xs tracking-widest uppercase text-honey-dark mb-2">常備品項</p>
+      <ul class="text-stone text-sm leading-[1.9] space-y-1">
+        <li>· 善存 / Centrum 綜合維他命</li>
+        <li>· DHC / GNC 魚油 EPA+DHA</li>
+        <li>· 葡萄王葉黃素（金盞花萃取）</li>
+        <li>· 益生菌（葡萄王、白蘭氏）</li>
+        <li>· 鈣鎂鋅複合錠（DHC）</li>
+      </ul>
+    </article>
+
+    <article class="reveal reveal-d2 bg-paper border border-ink/8 rounded-sm p-8 md:p-10">
+      <div class="w-12 h-12 rounded-full bg-honey/30 flex items-center justify-center mb-6">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2B2418" stroke-width="1.5"><path d="M9 2h6M8 6h8v3a4 4 0 01-1 2.6V20a2 2 0 01-2 2h-2a2 2 0 01-2-2v-8.4A4 4 0 018 9V6z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <p class="font-display italic text-honey-dark text-sm mb-2">— Category 03</p>
+      <h2 class="font-display text-2xl md:text-3xl text-ink mb-4">母嬰・嬰幼兒</h2>
+      <p class="text-stone text-sm md:text-base leading-[1.9] mb-6">幫剛當爸媽的鄰居挑了 20 多年。原則很簡單 — 成分要單純，包裝要好用。</p>
+      <p class="text-xs tracking-widest uppercase text-honey-dark mb-2">常備品項</p>
+      <ul class="text-stone text-sm leading-[1.9] space-y-1">
+        <li>· 雪印、明治、桂格 嬰兒奶粉</li>
+        <li>· 滿意寶寶、好奇 紙尿褲</li>
+        <li>· 施巴 5.5 嬰兒乳液 / 沐浴露</li>
+        <li>· Pigeon 奶瓶刷、矽膠奶嘴</li>
+        <li>· 副食品工具（OXO 研磨碗、矽膠湯匙）</li>
+      </ul>
+    </article>
+
+    <article class="reveal reveal-d3 bg-paper border border-ink/8 rounded-sm p-8 md:p-10">
+      <div class="w-12 h-12 rounded-full bg-honey/30 flex items-center justify-center mb-6">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2B2418" stroke-width="1.5"><path d="M3 12h4l3-9 4 18 3-9h4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <p class="font-display italic text-honey-dark text-sm mb-2">— Category 04</p>
+      <h2 class="font-display text-2xl md:text-3xl text-ink mb-4">醫療器材</h2>
+      <p class="text-stone text-sm md:text-base leading-[1.9] mb-6">慢性病自我管理、剛出院的長輩、術後復健。大型器材可短租，避免購買後用不到。</p>
+      <p class="text-xs tracking-widest uppercase text-honey-dark mb-2">常備品項</p>
+      <ul class="text-stone text-sm leading-[1.9] space-y-1">
+        <li>· 血壓計（OMRON HEM-7361T）</li>
+        <li>· 血糖機（亞培 FreeStyle Libre）</li>
+        <li>· 輪椅 · 助行器 · 拐杖</li>
+        <li>· 氣墊床（可日租，$ 100/天）</li>
+        <li>· 製氧機（短期租用）</li>
+      </ul>
+    </article>
+
+    <article class="reveal bg-paper border border-ink/8 rounded-sm p-8 md:p-10">
+      <div class="w-12 h-12 rounded-full bg-honey/30 flex items-center justify-center mb-6">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2B2418" stroke-width="1.5"><path d="M4 8l8-6 8 6v10a2 2 0 01-2 2h-2v-7H10v7H6a2 2 0 01-2-2V8z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <p class="font-display italic text-honey-dark text-sm mb-2">— Category 05</p>
+      <h2 class="font-display text-2xl md:text-3xl text-ink mb-4">傷口照護</h2>
+      <p class="text-stone text-sm md:text-base leading-[1.9] mb-6">小擦傷、術後傷口、糖尿病足部護理 — 不同情境用不同材料。我們可以教您怎麼換藥。</p>
+      <p class="text-xs tracking-widest uppercase text-honey-dark mb-2">常備品項</p>
+      <ul class="text-stone text-sm leading-[1.9] space-y-1">
+        <li>· 3M 人工皮（Tegaderm）</li>
+        <li>· 透氣紗布、彈性繃帶</li>
+        <li>· 優碘、生理食鹽水</li>
+        <li>· 凡士林（Vaseline）大罐裝</li>
+        <li>· 藥用棉棒、無菌棉花</li>
+      </ul>
+    </article>
+
+    <article class="reveal reveal-d1 bg-paper border border-ink/8 rounded-sm p-8 md:p-10">
+      <div class="w-12 h-12 rounded-full bg-honey/30 flex items-center justify-center mb-6">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2B2418" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M8 12h.01M12 8v.01M12 16v.01M16 12h.01" stroke-linecap="round"/></svg>
+      </div>
+      <p class="font-display italic text-honey-dark text-sm mb-2">— Category 06</p>
+      <h2 class="font-display text-2xl md:text-3xl text-ink mb-4">皮膚保養</h2>
+      <p class="text-stone text-sm md:text-base leading-[1.9] mb-6">藥師選的醫美保養品 — 重溫和、重證據。敏感肌、痘痘肌、熟齡肌都可諮詢。</p>
+      <p class="text-xs tracking-widest uppercase text-honey-dark mb-2">常備品項</p>
+      <ul class="text-stone text-sm leading-[1.9] space-y-1">
+        <li>· 理膚寶水 La Roche-Posay 全系列</li>
+        <li>· 雅漾 Avène 舒緩噴霧、修護霜</li>
+        <li>· 薇姿 Vichy 抗老精華</li>
+        <li>· 杜克 SkinCeuticals C E F 精華</li>
+        <li>· 寶拉珍選 痘痘肌專用</li>
+      </ul>
+    </article>
+
+  </div>
+</section>
+
+<!-- SPECIAL ORDER -->
+<section class="relative py-20 md:py-28 px-6 md:px-10 bg-bone">
+  <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+    <div class="reveal">
+      <p class="text-xs tracking-[0.3em] uppercase text-honey-dark mb-6">— 找不到的品項</p>
+      <h2 class="font-display font-light text-3xl md:text-5xl text-ink leading-[1.15] mb-6">
+        架上沒有的，<br/>
+        <span class="italic text-moss-dark">我們也能幫您調貨。</span>
+      </h2>
+    </div>
+    <div class="reveal reveal-d1 text-stone leading-[1.95] text-base md:text-lg space-y-4">
+      <p>有特別在用的進口品牌、絕版藥品、或某個朋友推薦的保健食品？歡迎來電或 LINE 詢問。</p>
+      <p>大部分品項可在 <span class="text-ink font-medium">隔天</span> 到貨。冷藏品需 2-3 天。我們會先告知預估價格，您決定要不要訂。</p>
+      <p class="pt-2"><a href="#contact" class="link-u text-ink text-sm tracking-wide">LINE 詢問品項 →</a></p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="relative py-24 md:py-32 px-6 md:px-10 bg-ink text-cream">
+  <div class="max-w-4xl mx-auto text-center">
+    <p class="text-xs tracking-[0.3em] uppercase text-honey mb-8 reveal">— 想找特定品牌</p>
+    <h2 class="font-display font-light text-4xl md:text-6xl text-cream mb-10 reveal reveal-d1">
+      問一下，<br/>
+      <span class="italic text-honey">不用親自跑一趟。</span>
+    </h2>
+    <a href="#" class="btn-primary bg-honey text-ink px-10 py-4 rounded-full text-sm tracking-wide font-medium inline-flex items-center gap-2 reveal reveal-d2">加入 LINE · 立即詢問</a>
+  </div>
+</section>
+
+</main>
+
+<footer class="bg-ink text-cream/50 px-6 md:px-10 py-12 border-t border-cream/10">
+  <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 text-xs tracking-wide">
+    <p>© 2026 小徑藥局 · Little Path Pharmacy · 健保特約字號 5901234567</p>
+    <p class="italic font-display">concept piece · design exploration</p>
+  </div>
+</footer>
+
+</body>
+</html>

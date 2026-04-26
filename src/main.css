@@ -1,5 +1,11 @@
 @import "tailwindcss";
 
+/* Explicitly scan every HTML file in the project root so Tailwind generates
+   utility classes used by sub-pages (about, services, products, etc.).
+   Without this, Vite's module graph only loads index.html during dev,
+   so classes unique to sub-pages get purged. */
+@source "../*.html";
+
 /* ============================================================
    Design tokens — replaces the old tailwind.config colors/fonts.
    In Tailwind v4 these live in CSS as @theme variables.
@@ -17,8 +23,8 @@
   --color-ink: #2B2418;
   --color-stone: #6B6454;
 
-  --font-display: "Fraunces", "Noto Serif TC", serif;
-  --font-serif: "Noto Serif TC", "Fraunces", serif;
+  --font-display: "Fraunces", "Klee One", "Noto Serif TC", serif;
+  --font-serif: "Fraunces", "Klee One", "Noto Serif TC", serif;
 }
 
 /* ============================================================
@@ -183,6 +189,30 @@ body {
 }
 
 /* ============================================================
+   Path card — homepage tiles linking to subpages
+   ============================================================ */
+.path-card {
+  transition: all 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.path-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(43, 36, 24, 0.2);
+  background: var(--color-paper);
+}
+
+/* ============================================================
+   Product category card
+   ============================================================ */
+.prod-card {
+  transition: all 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.prod-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(43, 36, 24, 0.18);
+  background: var(--color-cream);
+}
+
+/* ============================================================
    Article card
    ============================================================ */
 .article-card {
@@ -219,6 +249,16 @@ body {
 .link-u:hover::after {
   transform: scaleX(1);
   transform-origin: left;
+}
+
+/* Active page indicator in nav */
+.nav-active {
+  color: var(--color-ink);
+}
+.nav-active::after {
+  transform: scaleX(1);
+  transform-origin: left;
+  background: var(--color-honey-dark);
 }
 
 /* ============================================================

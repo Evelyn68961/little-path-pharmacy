@@ -6,7 +6,6 @@
 <title>小徑藥局 · Little Path — 陪您走過每一個日子</title>
 <meta name="description" content="小徑藥局 · 藏在巷弄裡的社區藥師。慢性病諮詢、用藥整合、血壓血糖檢測、疫苗接種、居家配送。" />
 
-<!-- Open Graph / social sharing -->
 <meta property="og:title" content="小徑藥局 · Little Path" />
 <meta property="og:description" content="藏在巷弄裡的社區藥師 · 四十餘年陪伴" />
 <meta property="og:type" content="website" />
@@ -15,9 +14,8 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&family=Noto+Serif+TC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&family=Klee+One:wght@400;600&family=Noto+Serif+TC:wght@400;500;600&display=swap" rel="stylesheet">
 
-<!-- Single entry point — Vite bundles CSS + JS through this -->
 <script type="module" src="/src/main.js"></script>
 </head>
 
@@ -26,7 +24,7 @@
 <!-- NAV -->
 <nav id="nav" class="fixed top-0 left-0 right-0 z-50 nav-blur">
   <div class="max-w-7xl mx-auto px-6 md:px-10 h-20 flex items-center justify-between">
-    <a href="#top" class="flex items-center gap-2.5">
+    <a href="/" class="flex items-center gap-2.5">
       <svg width="26" height="26" viewBox="0 0 32 32" fill="none" class="text-honey-dark">
         <path d="M4 28 Q 12 22, 16 14 T 28 4" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round"/>
         <circle cx="28" cy="4" r="2.5" fill="#6B7454"/>
@@ -35,12 +33,14 @@
       <span class="font-display text-xl md:text-2xl font-medium text-ink tracking-tight">小徑<span class="font-display italic text-moss text-lg ml-1">Little Path</span></span>
     </a>
 
-    <div class="hidden md:flex items-center gap-10 text-sm tracking-wide">
-      <a href="#about" class="link-u text-stone hover:text-ink">關於藥師</a>
-      <a href="#services" class="link-u text-stone hover:text-ink">服務項目</a>
-      <a href="#regulars" class="link-u text-stone hover:text-ink">老朋友專區</a>
-      <a href="#corner" class="link-u text-stone hover:text-ink">健康小角落</a>
-      <a href="#visit" class="link-u text-stone hover:text-ink">來訪路徑</a>
+    <div class="hidden md:flex items-center gap-6 text-sm tracking-wide">
+      <a href="/about.html" class="link-u text-stone hover:text-ink">關於藥師</a>
+      <a href="/services.html" class="link-u text-stone hover:text-ink">服務項目</a>
+      <a href="/clinics.html" class="link-u text-stone hover:text-ink">合作診所</a>
+      <a href="/products.html" class="link-u text-stone hover:text-ink">店內品項</a>
+      <a href="/regulars.html" class="link-u text-stone hover:text-ink">老朋友專區</a>
+      <a href="/corner.html" class="link-u text-stone hover:text-ink">健康小角落</a>
+      <a href="/visit.html" class="link-u text-stone hover:text-ink">來訪路徑</a>
       <a href="#contact" class="btn-primary bg-ink text-cream px-5 py-2.5 rounded-full text-sm inline-flex items-center gap-2">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M19.365 9.863c.349 0 .63.285.631.635 0 .351-.282.635-.631.635H17.61v1.125h1.755c.349 0 .63.283.63.634 0 .351-.281.635-.63.635h-2.389c-.346 0-.627-.285-.627-.635V8.108c0-.349.281-.634.63-.634h2.389c.346 0 .627.285.627.634 0 .351-.281.635-.63.635H17.61v1.12h1.755zm-3.855 3.367c0 .274-.176.52-.437.609-.066.022-.136.033-.207.033-.195 0-.373-.088-.491-.237l-2.392-3.255v2.851c0 .349-.282.635-.63.635-.348 0-.629-.286-.629-.635V8.108c0-.274.175-.52.436-.606.062-.022.137-.036.207-.036.195 0 .373.085.491.237l2.406 3.267V8.108c0-.349.282-.634.629-.634.348 0 .63.285.63.634v5.122zm-6.142 0c0 .349-.282.635-.629.635-.348 0-.63-.286-.63-.635V8.108c0-.349.282-.634.63-.634.347 0 .629.285.629.634v5.122zm-1.32-1.25h-2.373v-3.872c0-.349-.282-.634-.63-.634-.348 0-.63.285-.63.634v5.122c0 .349.282.635.63.635h2.373c.349 0 .63-.286.63-.635 0-.351-.281-.634-.63-.634l-.77.016zM12 0C5.373 0 0 4.367 0 9.74c0 4.82 4.259 8.857 10.013 9.621.39.084.92.258 1.054.592.121.303.079.778.039 1.085l-.171 1.027c-.053.303-.242 1.187 1.039.647 1.281-.54 6.911-4.069 9.428-6.967C23.395 14.783 24 12.34 24 9.74 24 4.367 18.627 0 12 0" fill="currentColor"/></svg>
         LINE 諮詢
@@ -56,11 +56,13 @@
 
   <div id="mobileMenu" class="mobile-menu md:hidden fixed top-20 left-0 right-0 bg-cream border-t border-ink/10 px-6 py-8">
     <div class="flex flex-col gap-6 text-lg">
-      <a href="#about" class="mobile-link text-stone">關於藥師</a>
-      <a href="#services" class="mobile-link text-stone">服務項目</a>
-      <a href="#regulars" class="mobile-link text-stone">老朋友專區</a>
-      <a href="#corner" class="mobile-link text-stone">健康小角落</a>
-      <a href="#visit" class="mobile-link text-stone">來訪路徑</a>
+      <a href="/about.html" class="mobile-link text-stone">關於藥師</a>
+      <a href="/services.html" class="mobile-link text-stone">服務項目</a>
+      <a href="/clinics.html" class="mobile-link text-stone">合作診所</a>
+      <a href="/products.html" class="mobile-link text-stone">店內品項</a>
+      <a href="/regulars.html" class="mobile-link text-stone">老朋友專區</a>
+      <a href="/corner.html" class="mobile-link text-stone">健康小角落</a>
+      <a href="/visit.html" class="mobile-link text-stone">來訪路徑</a>
       <a href="#contact" class="mobile-link btn-primary bg-ink text-cream px-6 py-3 rounded-full text-center text-base">LINE 諮詢</a>
     </div>
   </div>
@@ -76,7 +78,7 @@
 
   <div class="hidden md:flex absolute right-10 top-32 items-center gap-3 text-xs text-cream/70 tracking-widest uppercase">
     <span class="w-8 h-px bg-cream/40"></span>
-    Little Path · 台北 · 文山
+    Little Path · 新北 · 新莊
   </div>
 
   <div class="relative max-w-7xl mx-auto px-6 md:px-10 pb-16 md:pb-24 w-full">
@@ -94,8 +96,8 @@
       </p>
 
       <div class="anim-4 flex flex-col sm:flex-row gap-4">
-        <a href="#services" class="btn-primary bg-honey text-ink px-8 py-4 rounded-full text-sm tracking-wide text-center font-medium">看看我們能幫上的忙</a>
-        <a href="#about" class="btn-ghost border border-cream/50 text-cream px-8 py-4 rounded-full text-sm tracking-wide text-center">認識主理藥師</a>
+        <a href="/services.html" class="btn-primary bg-honey text-ink px-8 py-4 rounded-full text-sm tracking-wide text-center font-medium">看看我們能幫上的忙</a>
+        <a href="/about.html" class="btn-ghost border border-cream/50 text-cream px-8 py-4 rounded-full text-sm tracking-wide text-center">認識主理藥師</a>
       </div>
     </div>
   </div>
@@ -106,305 +108,75 @@
   </div>
 </section>
 
-<!-- ABOUT / PHARMACIST -->
-<section id="about" class="relative py-24 md:py-40 px-6 md:px-10 bg-paper">
-  <div class="max-w-7xl mx-auto grid md:grid-cols-12 gap-10 md:gap-16 items-center">
-    <div class="md:col-span-5 reveal">
-      <div class="relative">
-        <div class="absolute -top-4 -left-4 w-full h-full border border-honey/60 rounded-sm hidden md:block"></div>
-        <div class="pharmacist-img relative aspect-[4/5] w-full rounded-sm"></div>
-      </div>
-    </div>
-
-    <div class="md:col-span-7 reveal reveal-d1">
-      <p class="text-xs tracking-[0.3em] uppercase text-honey-dark mb-6">— 關於藥師 / Our Pharmacist</p>
-      <h2 class="font-display font-light text-4xl md:text-5xl lg:text-6xl leading-[1.1] text-ink mb-10">
-        藥，是科學。<br/>
-        但藥局，<br/>
-        是<span class="italic text-moss-dark">人的地方</span>。
-      </h2>
-
-      <div class="space-y-5 text-stone leading-[1.95] text-base md:text-lg max-w-xl mb-10">
-        <p>
-          我是 <span class="text-ink font-medium">林佳穎藥師</span>，1998 年從父親手中接下這家店。<br/>
-          那年我 29 歲，他 64 歲。我做的第一件事，是把店裡的檯燈全換成暖色調。
-        </p>
-        <p>
-          二十多年了，很多阿公阿嬤從前是爸爸照顧的，現在換我。他們帶著孫子進來，孫子拿著藥袋，眼神跟當年他們一樣害怕。
-        </p>
-        <p class="text-ink font-medium pt-1">
-          我希望這裡永遠是那種 — 你可以慢慢問、慢慢聊的地方。
-        </p>
-      </div>
-
-      <div class="grid grid-cols-2 gap-x-6 gap-y-4 pt-8 border-t border-ink/10 max-w-lg">
-        <div>
-          <p class="text-xs tracking-widest uppercase text-honey-dark mb-1">經歷</p>
-          <p class="text-sm text-ink">執業藥師 26 年</p>
-        </div>
-        <div>
-          <p class="text-xs tracking-widest uppercase text-honey-dark mb-1">學歷</p>
-          <p class="text-sm text-ink">台北醫學大學 藥學系</p>
-        </div>
-        <div>
-          <p class="text-xs tracking-widest uppercase text-honey-dark mb-1">專長</p>
-          <p class="text-sm text-ink">老年用藥 · 慢性病整合</p>
-        </div>
-        <div>
-          <p class="text-xs tracking-widest uppercase text-honey-dark mb-1">公會</p>
-          <p class="text-sm text-ink">台北市藥師公會理事</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- SERVICES -->
-<section id="services" class="relative py-24 md:py-40 px-6 md:px-10">
+<!-- INDEX OF PAGES — six small cards leading to each subpage -->
+<section class="relative py-24 md:py-40 px-6 md:px-10 bg-paper">
   <div class="max-w-7xl mx-auto">
-    <div class="reveal mb-16 md:mb-24 max-w-3xl">
-      <p class="text-xs tracking-[0.3em] uppercase text-honey-dark mb-6">— 服務項目 / Our Services</p>
+    <div class="reveal mb-16 md:mb-20 max-w-3xl">
+      <p class="text-xs tracking-[0.3em] uppercase text-honey-dark mb-6">— 走進小徑 / Find Your Way</p>
       <h2 class="font-display font-light text-4xl md:text-5xl lg:text-6xl leading-[1.1] text-ink">
-        我們能<br/>
-        <span class="italic text-moss-dark">陪您做的五件事。</span>
+        六條小路，<br/>
+        <span class="italic text-moss-dark">通往同一扇木門。</span>
       </h2>
     </div>
 
-    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-      <article class="svc-card reveal bg-paper border border-ink/8 rounded-sm p-8 md:p-10">
-        <div class="svc-icon-bg w-14 h-14 rounded-full bg-honey/30 flex items-center justify-center mb-8">
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#2B2418" stroke-width="1.4">
-            <path d="M9 11V7a3 3 0 116 0v4m-9 0h12v9a2 2 0 01-2 2H8a2 2 0 01-2-2v-9z" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </div>
-        <p class="text-xs tracking-widest uppercase text-honey-dark mb-3">No. 01</p>
-        <h3 class="font-display text-2xl text-ink mb-4">慢性病用藥諮詢</h3>
-        <p class="text-stone leading-[1.9] text-sm md:text-base">
-          高血壓、糖尿病、高血脂的藥怎麼吃？忘記吃了怎麼辦？我們幫您把每一顆藥的功能寫清楚，不是照本宣科，是陪您一起搞懂。
-        </p>
-      </article>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6">
 
-      <article class="svc-card reveal reveal-d1 bg-paper border border-ink/8 rounded-sm p-8 md:p-10">
-        <div class="svc-icon-bg w-14 h-14 rounded-full bg-honey/30 flex items-center justify-center mb-8">
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#2B2418" stroke-width="1.4">
-            <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6zM14 2v6h6M9 15l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </div>
-        <p class="text-xs tracking-widest uppercase text-honey-dark mb-3">No. 02</p>
-        <h3 class="font-display text-2xl text-ink mb-4">多重用藥整合</h3>
-        <p class="text-stone leading-[1.9] text-sm md:text-base">
-          在不同醫院拿到一大袋藥？擔心會不會重複？把所有藥帶過來，我們一起看。會交互作用的、可以停的、一定要吃的，清楚分類。
-        </p>
-      </article>
-
-      <article class="svc-card reveal reveal-d2 bg-paper border border-ink/8 rounded-sm p-8 md:p-10">
-        <div class="svc-icon-bg w-14 h-14 rounded-full bg-honey/30 flex items-center justify-center mb-8">
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#2B2418" stroke-width="1.4">
-            <path d="M22 12h-4l-3 9L9 3l-3 9H2" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </div>
-        <p class="text-xs tracking-widest uppercase text-honey-dark mb-3">No. 03</p>
-        <h3 class="font-display text-2xl text-ink mb-4">血壓・血糖量測</h3>
-        <p class="text-stone leading-[1.9] text-sm md:text-base">
-          來店免費量血壓、量血糖（血糖試片依健保規範）。我們幫您做紀錄，每月給您一張小報表，下次回診給醫師看。
-        </p>
-      </article>
-
-      <article class="svc-card reveal reveal-d3 bg-paper border border-ink/8 rounded-sm p-8 md:p-10">
-        <div class="svc-icon-bg w-14 h-14 rounded-full bg-honey/30 flex items-center justify-center mb-8">
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#2B2418" stroke-width="1.4">
-            <path d="M8 2v4M16 2v4M3 10h18M5 4h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V6a2 2 0 012-2zM12 14v4M10 16h4" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </div>
-        <p class="text-xs tracking-widest uppercase text-honey-dark mb-3">No. 04</p>
-        <h3 class="font-display text-2xl text-ink mb-4">疫苗接種預約</h3>
-        <p class="text-stone leading-[1.9] text-sm md:text-base">
-          流感、COVID、肺鏈、帶狀皰疹疫苗均可預約。公費、自費皆備。可於 LINE 上先問適不適合、什麼時候打，再決定要不要來。
-        </p>
-      </article>
-
-      <article class="svc-card reveal reveal-d4 bg-paper border border-ink/8 rounded-sm p-8 md:p-10">
-        <div class="svc-icon-bg w-14 h-14 rounded-full bg-honey/30 flex items-center justify-center mb-8">
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#2B2418" stroke-width="1.4">
-            <path d="M3 9h18M3 9l2-5h14l2 5M3 9v10a2 2 0 002 2h14a2 2 0 002-2V9M10 13h4" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </div>
-        <p class="text-xs tracking-widest uppercase text-honey-dark mb-3">No. 05</p>
-        <h3 class="font-display text-2xl text-ink mb-4">居家配送服務</h3>
-        <p class="text-stone leading-[1.9] text-sm md:text-base">
-          行動不便的長輩、剛手術的家人，我們可親送到府。半徑 2 公里內免費。LINE 上傳處方箋，我們準備好再出門，不讓您久等。
-        </p>
-      </article>
-
-      <article class="svc-card reveal bg-moss text-cream rounded-sm p-8 md:p-10 flex flex-col justify-between min-h-[280px]">
-        <div>
-          <p class="text-xs tracking-widest uppercase text-honey mb-3">Need something else?</p>
-          <h3 class="font-display text-2xl md:text-3xl leading-tight mb-4">
-            您想問的，<br/>我們都可以聊。
-          </h3>
-        </div>
-        <a href="#contact" class="inline-flex items-center gap-2 text-cream text-sm tracking-wide link-u self-start">
-          用 LINE 先問一下 →
-        </a>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- FOR REGULARS -->
-<section id="regulars" class="relative py-24 md:py-40 px-6 md:px-10 bg-forest text-cream overflow-hidden">
-  <div class="absolute -right-16 top-20 hidden lg:block font-display text-[12rem] leading-none text-cream/5 italic select-none">Regulars</div>
-
-  <div class="relative max-w-7xl mx-auto">
-    <div class="grid md:grid-cols-12 gap-10 md:gap-20 mb-16 md:mb-20">
-      <div class="md:col-span-5 reveal">
-        <p class="text-xs tracking-[0.3em] uppercase text-honey mb-6">— 老朋友專區 / For Regulars</p>
-        <h2 class="font-display font-light text-4xl md:text-5xl lg:text-6xl leading-[1.1] text-cream">
-          三件小事，<br/>
-          <span class="italic text-honey">讓您省心。</span>
-        </h2>
-      </div>
-      <div class="md:col-span-6 md:col-start-7 reveal reveal-d1 text-cream/80 leading-[1.95] text-base md:text-lg">
-        如果您或家人長期在我們這裡拿藥，有些事情您不用每次重跑一遍 — 我們都記得。
-      </div>
-    </div>
-
-    <div class="grid md:grid-cols-3 gap-8 md:gap-12">
-      <div class="reveal border-t border-cream/20 pt-8">
-        <div class="flex items-start gap-4 mb-6">
-          <span class="font-display text-5xl md:text-6xl font-light text-honey leading-none">一</span>
-          <h3 class="font-display text-xl md:text-2xl text-cream pt-3">連續處方<br/>自動提醒</h3>
-        </div>
-        <p class="text-cream/75 leading-[1.95] text-sm md:text-base">
-          慢性病連續處方箋快到期前，我們會主動用 LINE 提醒您。不用再翻藥袋找日期，不用擔心漏吃。
-        </p>
-      </div>
-
-      <div class="reveal reveal-d1 border-t border-cream/20 pt-8">
-        <div class="flex items-start gap-4 mb-6">
-          <span class="font-display text-5xl md:text-6xl font-light text-honey leading-none">二</span>
-          <h3 class="font-display text-xl md:text-2xl text-cream pt-3">家人共同<br/>用藥檔案</h3>
-        </div>
-        <p class="text-cream/75 leading-[1.95] text-sm md:text-base">
-          一份檔案記錄全家的慢性病用藥。幫爸媽拿藥時，我們能一眼看出有沒有重複或衝突的藥。
-        </p>
-      </div>
-
-      <div class="reveal reveal-d2 border-t border-cream/20 pt-8">
-        <div class="flex items-start gap-4 mb-6">
-          <span class="font-display text-5xl md:text-6xl font-light text-honey leading-none">三</span>
-          <h3 class="font-display text-xl md:text-2xl text-cream pt-3">季節性<br/>小提醒</h3>
-        </div>
-        <p class="text-cream/75 leading-[1.95] text-sm md:text-base">
-          換季、流感季、旅遊季，我們依您的慢性病狀況送上小提醒。什麼要補、什麼要避開、哪些疫苗該打了。
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- HEALTH CORNER / ARTICLES -->
-<section id="corner" class="relative py-24 md:py-40 px-6 md:px-10 bg-paper">
-  <div class="max-w-7xl mx-auto">
-    <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-8 mb-16 md:mb-20">
-      <div class="reveal max-w-2xl">
-        <p class="text-xs tracking-[0.3em] uppercase text-honey-dark mb-6">— 健康小角落 / Health Corner</p>
-        <h2 class="font-display font-light text-4xl md:text-5xl lg:text-6xl leading-[1.1] text-ink">
-          一些<span class="italic text-moss-dark">日常叮嚀。</span>
-        </h2>
-      </div>
-      <a href="#" class="reveal reveal-d1 link-u text-sm tracking-widest uppercase text-ink self-start md:self-auto">
-        看更多文章 →
+      <a href="/about.html" class="path-card reveal group bg-cream border border-ink/8 rounded-sm p-8 md:p-10 block">
+        <p class="font-display italic text-honey-dark text-sm mb-5">— Page 01</p>
+        <h3 class="font-display text-2xl md:text-3xl text-ink mb-4 leading-tight">關於藥師</h3>
+        <p class="text-stone leading-[1.9] text-sm md:text-base mb-8">林佳穎藥師 · 1998 年從父親手中接下這家店。讀她二十多年來在這條巷子的故事。</p>
+        <span class="inline-flex items-center gap-2 text-ink text-sm tracking-wide link-u">認識藥師 →</span>
       </a>
-    </div>
 
-    <div class="grid md:grid-cols-3 gap-6 md:gap-8">
-      <article class="article-card reveal">
-        <div class="overflow-hidden rounded-sm mb-6">
-          <div class="article-1 article-img-wrap aspect-[4/3] w-full"></div>
-        </div>
-        <p class="text-xs tracking-widest uppercase text-honey-dark mb-3">用藥安全 · 3 min read</p>
-        <h3 class="font-display text-xl md:text-2xl text-ink leading-snug mb-3">
-          飯前吃？飯後吃？那到底什麼時候吃？
-        </h3>
-        <p class="text-stone leading-[1.9] text-sm">
-          藥袋上的時機說明，常常讓人看得一頭霧水。我們用一張圖表，把最常見的三種時機講清楚。
-        </p>
-      </article>
+      <a href="/services.html" class="path-card reveal reveal-d1 group bg-cream border border-ink/8 rounded-sm p-8 md:p-10 block">
+        <p class="font-display italic text-honey-dark text-sm mb-5">— Page 02</p>
+        <h3 class="font-display text-2xl md:text-3xl text-ink mb-4 leading-tight">服務項目</h3>
+        <p class="text-stone leading-[1.9] text-sm md:text-base mb-8">五項核心服務 · 慢性病諮詢、用藥整合、血壓血糖檢測、疫苗接種、居家配送。附處方箋三步驟流程。</p>
+        <span class="inline-flex items-center gap-2 text-ink text-sm tracking-wide link-u">看完整服務 →</span>
+      </a>
 
-      <article class="article-card reveal reveal-d1">
-        <div class="overflow-hidden rounded-sm mb-6">
-          <div class="article-2 article-img-wrap aspect-[4/3] w-full"></div>
-        </div>
-        <p class="text-xs tracking-widest uppercase text-honey-dark mb-3">季節保健 · 4 min read</p>
-        <h3 class="font-display text-xl md:text-2xl text-ink leading-snug mb-3">
-          冬天早晨量血壓，為什麼特別高？
-        </h3>
-        <p class="text-stone leading-[1.9] text-sm">
-          氣溫變化對血壓的影響比想像中更大。給高血壓朋友一份冬季自我照護清單，也給家人一份觀察指南。
-        </p>
-      </article>
+      <a href="/products.html" class="path-card reveal reveal-d2 group bg-cream border border-ink/8 rounded-sm p-8 md:p-10 block">
+        <p class="font-display italic text-honey-dark text-sm mb-5">— Page 03</p>
+        <h3 class="font-display text-2xl md:text-3xl text-ink mb-4 leading-tight">店內品項</h3>
+        <p class="text-stone leading-[1.9] text-sm md:text-base mb-8">六大類別 · 從感冒備藥到醫療器材，列出我們架上實際在賣、敢推薦的牌子。</p>
+        <span class="inline-flex items-center gap-2 text-ink text-sm tracking-wide link-u">看店內品項 →</span>
+      </a>
 
-      <article class="article-card reveal reveal-d2">
-        <div class="overflow-hidden rounded-sm mb-6">
-          <div class="article-3 article-img-wrap aspect-[4/3] w-full"></div>
-        </div>
-        <p class="text-xs tracking-widest uppercase text-honey-dark mb-3">老年用藥 · 5 min read</p>
-        <h3 class="font-display text-xl md:text-2xl text-ink leading-snug mb-3">
-          家裡長輩的藥，該怎麼整理才安心？
-        </h3>
-        <p class="text-stone leading-[1.9] text-sm">
-          分裝盒、標籤、拍照留底 — 三個小方法，幫您把阿公阿嬤的用藥變得清楚又安全。
-        </p>
-      </article>
+      <a href="/regulars.html" class="path-card reveal reveal-d3 group bg-cream border border-ink/8 rounded-sm p-8 md:p-10 block">
+        <p class="font-display italic text-honey-dark text-sm mb-5">— Page 04</p>
+        <h3 class="font-display text-2xl md:text-3xl text-ink mb-4 leading-tight">老朋友專區</h3>
+        <p class="text-stone leading-[1.9] text-sm md:text-base mb-8">長期客人的三件小事 · 連續處方提醒、家人共同用藥檔案、季節小提醒。</p>
+        <span class="inline-flex items-center gap-2 text-ink text-sm tracking-wide link-u">查看會員權益 →</span>
+      </a>
+
+      <a href="/corner.html" class="path-card reveal group bg-cream border border-ink/8 rounded-sm p-8 md:p-10 block">
+        <p class="font-display italic text-honey-dark text-sm mb-5">— Page 05</p>
+        <h3 class="font-display text-2xl md:text-3xl text-ink mb-4 leading-tight">健康小角落</h3>
+        <p class="text-stone leading-[1.9] text-sm md:text-base mb-8">藥師寫的日常叮嚀 · 用藥安全、季節保健、老年照護、母嬰用藥，每月更新。</p>
+        <span class="inline-flex items-center gap-2 text-ink text-sm tracking-wide link-u">閱讀文章 →</span>
+      </a>
+
+      <a href="/visit.html" class="path-card reveal reveal-d1 group bg-cream border border-ink/8 rounded-sm p-8 md:p-10 block">
+        <p class="font-display italic text-honey-dark text-sm mb-5">— Page 06</p>
+        <h3 class="font-display text-2xl md:text-3xl text-ink mb-4 leading-tight">來訪路徑</h3>
+        <p class="text-stone leading-[1.9] text-sm md:text-base mb-8">地址、營業時間、地圖、交通方式 · 從捷運新莊站怎麼走到我們的木門。</p>
+        <span class="inline-flex items-center gap-2 text-ink text-sm tracking-wide link-u">查看路線 →</span>
+      </a>
+
     </div>
   </div>
 </section>
 
-<!-- VISIT -->
-<section id="visit" class="relative py-24 md:py-40 px-6 md:px-10">
-  <div class="max-w-7xl mx-auto grid md:grid-cols-12 gap-10 md:gap-16">
-    <div class="md:col-span-5 reveal">
-      <p class="text-xs tracking-[0.3em] uppercase text-honey-dark mb-6">— 來訪路徑 / Visit Us</p>
-      <h2 class="font-display font-light text-4xl md:text-5xl lg:text-6xl leading-[1.1] text-ink mb-10">
-        在巷子的<br/>
-        <span class="italic text-moss-dark">第三個轉角。</span>
-      </h2>
-      <p class="text-stone leading-[1.95] text-base md:text-lg mb-10 max-w-md">
-        從景美捷運站步行約 8 分鐘，穿過木柵路的市場，看見一棵大榕樹左轉，我們就在木門綠招牌的那一家。
-      </p>
-
-      <div class="space-y-6">
-        <div class="pb-6 border-b border-ink/10">
-          <p class="text-xs tracking-widest uppercase text-honey-dark mb-2">地址</p>
-          <p class="text-ink text-base">台北市文山區木柵路四段 XX 巷 XX 號</p>
-        </div>
-        <div class="pb-6 border-b border-ink/10">
-          <p class="text-xs tracking-widest uppercase text-honey-dark mb-2">營業時間</p>
-          <p class="text-ink text-base">週一至週六 09:00 – 21:00</p>
-          <p class="text-stone text-sm mt-1">週日公休</p>
-        </div>
-        <div>
-          <p class="text-xs tracking-widest uppercase text-honey-dark mb-2">電話</p>
-          <p class="text-ink text-base">(02) 2234-XXXX</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="md:col-span-7 reveal reveal-d1">
-      <!-- Map placeholder — in production, embed a real map tile -->
-      <div class="aspect-[4/3] w-full bg-bone rounded-sm border border-ink/10 flex items-center justify-center relative overflow-hidden">
-        <svg class="absolute inset-0 w-full h-full opacity-40" viewBox="0 0 400 300" fill="none">
-          <path class="hand-line" d="M20 200 Q 100 180, 150 140 T 280 80 L 360 60" stroke="#6B7454" stroke-width="1.5" stroke-linecap="round"/>
-          <circle cx="360" cy="60" r="6" fill="#E8B75A"/>
-          <circle cx="20" cy="200" r="4" fill="#6B7454"/>
-        </svg>
-        <div class="relative text-center">
-          <p class="font-display italic text-moss text-2xl mb-2">小徑 · Little Path</p>
-          <p class="text-xs tracking-widest uppercase text-stone">here we are</p>
-        </div>
-      </div>
-    </div>
+<!-- SHORT TESTIMONIAL ROW -->
+<section class="relative py-24 md:py-32 px-6 md:px-10 bg-cream">
+  <div class="max-w-4xl mx-auto text-center">
+    <p class="reveal text-xs tracking-[0.3em] uppercase text-honey-dark mb-8">— 老朋友的話</p>
+    <blockquote class="reveal reveal-d1 font-display text-2xl md:text-4xl text-ink leading-[1.5] italic mb-10">
+      「同一條巷子、同一個招牌、<br/>
+      同一個藥師認得我們母女。<br/>
+      這條小徑，就是回家的路。」
+    </blockquote>
+    <p class="reveal reveal-d2 text-sm text-stone tracking-wide">— 王女士 · 兩代老顧客 · 居民 22 年</p>
   </div>
 </section>
 
@@ -431,7 +203,7 @@
 <!-- FOOTER -->
 <footer class="bg-ink text-cream/50 px-6 md:px-10 py-12 border-t border-cream/10">
   <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 text-xs tracking-wide">
-    <p>© 2026 小徑藥局 · Little Path Pharmacy</p>
+    <p>© 2026 小徑藥局 · Little Path Pharmacy · 健保特約字號 5901234567</p>
     <p class="italic font-display">concept piece · design exploration</p>
   </div>
 </footer>

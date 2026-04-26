@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>服務項目 · 小徑藥局 Little Path</title>
+<meta name="description" content="慢性病用藥諮詢、多重用藥整合、血壓血糖量測、疫苗接種、居家配送 — 五項核心服務。健保特約藥局。" />
+<meta property="og:title" content="服務項目 · 小徑藥局" />
+<meta property="og:type" content="website" />
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&family=Klee+One:wght@400;600&family=Noto+Serif+TC:wght@400;500;600&display=swap" rel="stylesheet">
+<script type="module" src="/src/main.js"></script>
+</head>
+
+<body class="grain">
+
+<nav id="nav" class="fixed top-0 left-0 right-0 z-50 nav-blur">
+  <div class="max-w-7xl mx-auto px-6 md:px-10 h-20 flex items-center justify-between">
+    <a href="/" class="flex items-center gap-2.5">
+      <svg width="26" height="26" viewBox="0 0 32 32" fill="none" class="text-honey-dark">
+        <path d="M4 28 Q 12 22, 16 14 T 28 4" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+        <circle cx="28" cy="4" r="2.5" fill="#6B7454"/>
+        <circle cx="4" cy="28" r="2.5" fill="currentColor"/>
+      </svg>
+      <span class="font-display text-xl md:text-2xl font-medium text-ink tracking-tight">小徑<span class="font-display italic text-moss text-lg ml-1">Little Path</span></span>
+    </a>
+    <div class="hidden md:flex items-center gap-6 text-sm tracking-wide">
+      <a href="/about.html" class="link-u text-stone hover:text-ink">關於藥師</a>
+      <a href="/services.html" class="link-u nav-active text-stone hover:text-ink">服務項目</a>
+      <a href="/clinics.html" class="link-u text-stone hover:text-ink">合作診所</a>
+      <a href="/products.html" class="link-u text-stone hover:text-ink">店內品項</a>
+      <a href="/regulars.html" class="link-u text-stone hover:text-ink">老朋友專區</a>
+      <a href="/corner.html" class="link-u text-stone hover:text-ink">健康小角落</a>
+      <a href="/visit.html" class="link-u text-stone hover:text-ink">來訪路徑</a>
+      <a href="#contact" class="btn-primary bg-ink text-cream px-5 py-2.5 rounded-full text-sm">LINE 諮詢</a>
+    </div>
+    <button id="hamburger" class="md:hidden w-10 h-10 flex flex-col items-center justify-center gap-1.5" aria-label="Menu" aria-expanded="false" aria-controls="mobileMenu">
+      <span class="w-6 h-px bg-ink transition-transform duration-300"></span>
+      <span class="w-6 h-px bg-ink transition-opacity duration-300"></span>
+      <span class="w-6 h-px bg-ink transition-transform duration-300"></span>
+    </button>
+  </div>
+  <div id="mobileMenu" class="mobile-menu md:hidden fixed top-20 left-0 right-0 bg-cream border-t border-ink/10 px-6 py-8">
+    <div class="flex flex-col gap-6 text-lg">
+      <a href="/about.html" class="mobile-link text-stone">關於藥師</a>
+      <a href="/services.html" class="mobile-link text-stone">服務項目</a>
+      <a href="/clinics.html" class="mobile-link text-stone">合作診所</a>
+      <a href="/products.html" class="mobile-link text-stone">店內品項</a>
+      <a href="/regulars.html" class="mobile-link text-stone">老朋友專區</a>
+      <a href="/corner.html" class="mobile-link text-stone">健康小角落</a>
+      <a href="/visit.html" class="mobile-link text-stone">來訪路徑</a>
+      <a href="#contact" class="mobile-link btn-primary bg-ink text-cream px-6 py-3 rounded-full text-center text-base">LINE 諮詢</a>
+    </div>
+  </div>
+</nav>
+
+<main>
+
+<!-- PAGE HERO -->
+<section class="pt-32 md:pt-40 pb-16 md:pb-24 px-6 md:px-10 bg-paper">
+  <div class="max-w-7xl mx-auto grid md:grid-cols-12 gap-8 md:gap-16 items-end">
+    <div class="md:col-span-8">
+      <p class="text-xs tracking-[0.3em] uppercase text-honey-dark mb-6">— Page 02 / 服務項目</p>
+      <h1 class="font-display font-light text-5xl md:text-6xl lg:text-7xl text-ink leading-[1.05]">
+        我們能<br/>
+        <span class="italic text-moss-dark">陪您做的五件事。</span>
+      </h1>
+    </div>
+    <div class="md:col-span-4 md:pb-4">
+      <p class="text-stone leading-[1.95] text-base md:text-lg">
+        下面這五項，是我們最常做、也最在乎做好的事。每一項都附上實際流程、可預約方式、相關費用 — 讓您在來之前就心中有數。
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- 5 SERVICES (DETAILED) -->
+<section class="relative py-20 md:py-32 px-6 md:px-10">
+  <div class="max-w-6xl mx-auto space-y-16 md:space-y-24">
+
+    <article class="reveal grid md:grid-cols-12 gap-8 md:gap-12 pb-16 md:pb-20 border-b border-ink/10">
+      <div class="md:col-span-3">
+        <p class="font-display italic text-honey-dark text-5xl md:text-6xl mb-4 leading-none">No. 01</p>
+        <p class="font-display text-xl md:text-2xl text-ink">慢性病諮詢</p>
+      </div>
+      <div class="md:col-span-9">
+        <h2 class="font-display text-3xl md:text-4xl text-ink mb-6">慢性病用藥諮詢</h2>
+        <p class="text-stone leading-[1.95] text-base md:text-lg mb-6">
+          高血壓、糖尿病、高血脂的藥怎麼吃？忘記吃了怎麼辦？我們幫您把每一顆藥的功能寫清楚，不是照本宣科，是陪您一起搞懂。
+        </p>
+        <div class="grid md:grid-cols-2 gap-x-10 gap-y-5 text-base md:text-lg pt-6 border-t border-ink/10">
+          <p class="text-stone"><span class="text-ink font-medium">時長</span> · 每次 15-30 分鐘</p>
+          <p class="text-stone"><span class="text-ink font-medium">費用</span> · 免費（健保特約）</p>
+          <p class="text-stone"><span class="text-ink font-medium">預約</span> · LINE / 來電 / 直接到店</p>
+          <p class="text-stone"><span class="text-ink font-medium">需要帶</span> · 健保卡、藥袋、最近的回診紀錄</p>
+        </div>
+      </div>
+    </article>
+
+    <article class="reveal grid md:grid-cols-12 gap-8 md:gap-12 pb-16 md:pb-20 border-b border-ink/10">
+      <div class="md:col-span-3">
+        <p class="font-display italic text-honey-dark text-5xl md:text-6xl mb-4 leading-none">No. 02</p>
+        <p class="font-display text-xl md:text-2xl text-ink">用藥整合</p>
+      </div>
+      <div class="md:col-span-9">
+        <h2 class="font-display text-3xl md:text-4xl text-ink mb-6">多重用藥整合</h2>
+        <p class="text-stone leading-[1.95] text-base md:text-lg mb-6">
+          在不同醫院拿到一大袋藥？擔心會不會重複？把所有藥帶過來，我們一起看。會交互作用的、可以停的、一定要吃的，清楚分類。整合後我們會給您一張小卡片，下次回診給醫師看。
+        </p>
+        <div class="grid md:grid-cols-2 gap-x-10 gap-y-5 text-base md:text-lg pt-6 border-t border-ink/10">
+          <p class="text-stone"><span class="text-ink font-medium">時長</span> · 30-60 分鐘（建議預約）</p>
+          <p class="text-stone"><span class="text-ink font-medium">費用</span> · 免費</p>
+          <p class="text-stone"><span class="text-ink font-medium">適合</span> · 同時吃 5 種以上藥的長輩</p>
+          <p class="text-stone"><span class="text-ink font-medium">需要帶</span> · 所有藥袋（含保健食品）</p>
+        </div>
+      </div>
+    </article>
+
+    <article class="reveal grid md:grid-cols-12 gap-8 md:gap-12 pb-16 md:pb-20 border-b border-ink/10">
+      <div class="md:col-span-3">
+        <p class="font-display italic text-honey-dark text-5xl md:text-6xl mb-4 leading-none">No. 03</p>
+        <p class="font-display text-xl md:text-2xl text-ink">血壓 · 血糖</p>
+      </div>
+      <div class="md:col-span-9">
+        <h2 class="font-display text-3xl md:text-4xl text-ink mb-6">血壓・血糖量測</h2>
+        <p class="text-stone leading-[1.95] text-base md:text-lg mb-6">
+          來店免費量血壓、量血糖（血糖試片依健保規範）。我們幫您做紀錄，每月給您一張小報表，下次回診給醫師看數字一目了然。
+        </p>
+        <div class="grid md:grid-cols-2 gap-x-10 gap-y-5 text-base md:text-lg pt-6 border-t border-ink/10">
+          <p class="text-stone"><span class="text-ink font-medium">血壓</span> · 免費（無預約）</p>
+          <p class="text-stone"><span class="text-ink font-medium">血糖</span> · 健保身分免費 / 自費 50 元</p>
+          <p class="text-stone"><span class="text-ink font-medium">紀錄表</span> · 月底寄 LINE / 來店領取</p>
+          <p class="text-stone"><span class="text-ink font-medium">建議</span> · 高血壓朋友每週 2-3 次</p>
+        </div>
+      </div>
+    </article>
+
+    <article class="reveal grid md:grid-cols-12 gap-8 md:gap-12 pb-16 md:pb-20 border-b border-ink/10">
+      <div class="md:col-span-3">
+        <p class="font-display italic text-honey-dark text-5xl md:text-6xl mb-4 leading-none">No. 04</p>
+        <p class="font-display text-xl md:text-2xl text-ink">疫苗接種</p>
+      </div>
+      <div class="md:col-span-9">
+        <h2 class="font-display text-3xl md:text-4xl text-ink mb-6">疫苗接種預約</h2>
+        <p class="text-stone leading-[1.95] text-base md:text-lg mb-4">
+          流感、COVID、肺鏈、帶狀皰疹疫苗均可預約。公費、自費皆備。可於 LINE 上先問適不適合、什麼時候打，再決定要不要來。
+        </p>
+
+        <div class="bg-honey/15 border border-honey/40 rounded-sm p-5 md:p-6 mb-6">
+          <p class="text-ink leading-[1.85] text-sm md:text-base">
+            <span class="font-medium">關於接種：</span>依藥事法規定，疫苗接種需由醫師執行。我們與三家社區診所長期合作 — 醫師到店接種，藥師負責全程衛教與後續追蹤。
+            <a href="/clinics.html" class="link-u text-honey-dark whitespace-nowrap ml-1">看合作診所 →</a>
+          </p>
+        </div>
+
+        <div class="bg-bone rounded-sm p-6 md:p-8 mb-6">
+          <p class="text-xs tracking-widest uppercase text-honey-dark mb-4">2026 自費疫苗價目</p>
+          <div class="grid sm:grid-cols-2 gap-x-8 gap-y-2 text-sm">
+            <p class="text-stone flex justify-between border-b border-ink/8 pb-2"><span>四價流感疫苗</span><span class="text-ink">$ 850</span></p>
+            <p class="text-stone flex justify-between border-b border-ink/8 pb-2"><span>13 價肺炎鏈球菌</span><span class="text-ink">$ 3,200</span></p>
+            <p class="text-stone flex justify-between border-b border-ink/8 pb-2"><span>23 價肺炎鏈球菌</span><span class="text-ink">$ 1,200</span></p>
+            <p class="text-stone flex justify-between border-b border-ink/8 pb-2"><span>帶狀皰疹（兩劑）</span><span class="text-ink">$ 16,000</span></p>
+            <p class="text-stone flex justify-between border-b border-ink/8 pb-2"><span>HPV 9 價（單劑）</span><span class="text-ink">$ 6,500</span></p>
+            <p class="text-stone flex justify-between border-b border-ink/8 pb-2"><span>A 肝疫苗</span><span class="text-ink">$ 1,800</span></p>
+          </div>
+          <p class="text-xs text-stone mt-4">※ 公費資格者皆免費。價格供參考，依當期進貨調整。</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-x-10 gap-y-5 text-base md:text-lg pt-6 border-t border-ink/10">
+          <p class="text-stone"><span class="text-ink font-medium">預約</span> · LINE 為主</p>
+          <p class="text-stone"><span class="text-ink font-medium">需要帶</span> · 健保卡、身分證</p>
+        </div>
+      </div>
+    </article>
+
+    <article class="reveal grid md:grid-cols-12 gap-8 md:gap-12">
+      <div class="md:col-span-3">
+        <p class="font-display italic text-honey-dark text-5xl md:text-6xl mb-4 leading-none">No. 05</p>
+        <p class="font-display text-xl md:text-2xl text-ink">居家配送</p>
+      </div>
+      <div class="md:col-span-9">
+        <h2 class="font-display text-3xl md:text-4xl text-ink mb-6">居家配送服務</h2>
+        <p class="text-stone leading-[1.95] text-base md:text-lg mb-6">
+          行動不便的長輩、剛手術的家人，我們可親送到府。半徑 2 公里內免費，2 公里外酌收 50 元。LINE 上傳處方箋，我們準備好再出門，不讓您久等。
+        </p>
+        <div class="grid md:grid-cols-2 gap-x-10 gap-y-5 text-base md:text-lg pt-6 border-t border-ink/10">
+          <p class="text-stone"><span class="text-ink font-medium">範圍</span> · 新莊區、泰山部分</p>
+          <p class="text-stone"><span class="text-ink font-medium">時間</span> · 週一至週六 14:00 / 19:00 兩班</p>
+          <p class="text-stone"><span class="text-ink font-medium">最低訂購</span> · 無</p>
+          <p class="text-stone"><span class="text-ink font-medium">付款</span> · 現金 / LINE Pay / 健保卡刷卡</p>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- PRESCRIPTION FLOW -->
+<section class="relative py-24 md:py-32 px-6 md:px-10 bg-bone">
+  <div class="max-w-7xl mx-auto">
+    <div class="reveal flex flex-wrap items-center gap-3 md:gap-5 mb-14 md:mb-20 pb-10 border-b border-ink/10">
+      <span class="inline-flex items-center gap-2 bg-honey/40 text-ink px-4 py-2 rounded-full text-xs tracking-[0.2em] uppercase">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4M12 2l8 4v6c0 5-4 9-8 10-4-1-8-5-8-10V6l8-4z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        健保特約藥局
+      </span>
+      <span class="text-stone text-xs tracking-widest uppercase">健保特約字號 5901234567</span>
+    </div>
+
+    <div class="reveal mb-16 md:mb-20 max-w-3xl">
+      <p class="text-xs tracking-[0.3em] uppercase text-honey-dark mb-6">— 處方箋怎麼辦 / How It Works</p>
+      <h2 class="font-display font-light text-4xl md:text-5xl lg:text-6xl leading-[1.1] text-ink">
+        三步驟，<br/>
+        把<span class="italic text-moss-dark">麻煩留給我們。</span>
+      </h2>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-10 md:gap-12 relative">
+      <div class="hidden md:block absolute top-10 left-[14%] right-[14%] h-px bg-ink/15"></div>
+
+      <div class="relative reveal">
+        <div class="relative z-10 w-20 h-20 rounded-full bg-cream border border-ink/15 flex items-center justify-center mb-8 font-display text-3xl text-honey-dark italic">01</div>
+        <h3 class="font-display text-2xl text-ink mb-4">拍照上傳 LINE</h3>
+        <p class="text-stone leading-[1.95] text-sm md:text-base">手上拿著處方箋？慢性病連續處方？拍張照傳到我們的 LINE — 您不用打字，藥師會幫您看清楚每一行。</p>
+      </div>
+
+      <div class="relative reveal reveal-d1">
+        <div class="relative z-10 w-20 h-20 rounded-full bg-cream border border-ink/15 flex items-center justify-center mb-8 font-display text-3xl text-honey-dark italic">02</div>
+        <h3 class="font-display text-2xl text-ink mb-4">我們先把藥備好</h3>
+        <p class="text-stone leading-[1.95] text-sm md:text-base">備好之後我們回您一張小清單 — 哪些藥、份量、有沒有需要補充的衛教提醒。先看過，有疑問可以當場問。</p>
+      </div>
+
+      <div class="relative reveal reveal-d2">
+        <div class="relative z-10 w-20 h-20 rounded-full bg-cream border border-ink/15 flex items-center justify-center mb-8 font-display text-3xl text-honey-dark italic">03</div>
+        <h3 class="font-display text-2xl text-ink mb-4">來店取藥或宅配</h3>
+        <p class="text-stone leading-[1.95] text-sm md:text-base">告訴我們您方便的時間。半徑 2 公里內免費宅配，由認識的人按您家門鈴 — 不是陌生快遞。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="relative py-24 md:py-32 px-6 md:px-10 bg-paper">
+  <div class="max-w-4xl mx-auto">
+    <p class="reveal text-xs tracking-[0.3em] uppercase text-honey-dark mb-6">— 常被問到的問題 / FAQ</p>
+    <h2 class="reveal font-display font-light text-4xl md:text-5xl text-ink leading-[1.15] mb-16">
+      您可能<br/>
+      <span class="italic text-moss-dark">想先知道的事。</span>
+    </h2>
+
+    <div class="space-y-8">
+      <details class="reveal group border-b border-ink/10 pb-6">
+        <summary class="flex justify-between items-start gap-6 cursor-pointer">
+          <h3 class="font-display text-xl md:text-2xl text-ink">健保卡忘了帶怎麼辦？</h3>
+          <span class="font-display text-2xl text-honey-dark group-open:rotate-45 transition-transform">+</span>
+        </summary>
+        <p class="text-stone leading-[1.95] text-base mt-5">沒關係，可以先用身分證號碼補登記。一週內補帶健保卡來即可。慢性病老主顧，我們連身分證號都記得。</p>
+      </details>
+
+      <details class="reveal group border-b border-ink/10 pb-6">
+        <summary class="flex justify-between items-start gap-6 cursor-pointer">
+          <h3 class="font-display text-xl md:text-2xl text-ink">處方箋過期了還能拿藥嗎？</h3>
+          <span class="font-display text-2xl text-honey-dark group-open:rotate-45 transition-transform">+</span>
+        </summary>
+        <p class="text-stone leading-[1.95] text-base mt-5">處方箋有效期通常為開立日起 3 天內（連續處方箋例外）。過期需請醫師重新開立。如果您不確定，拍照傳 LINE，我們幫您看。</p>
+      </details>
+
+      <details class="reveal group border-b border-ink/10 pb-6">
+        <summary class="flex justify-between items-start gap-6 cursor-pointer">
+          <h3 class="font-display text-xl md:text-2xl text-ink">疫苗會不會痛？打完要注意什麼？</h3>
+          <span class="font-display text-2xl text-honey-dark group-open:rotate-45 transition-transform">+</span>
+        </summary>
+        <p class="text-stone leading-[1.95] text-base mt-5">大部分疫苗只有針扎瞬間的疼痛，過後輕微痠脹 1-2 天。打完建議停留店內觀察 15 分鐘，當天避免劇烈運動，多喝水。發燒超過 38.5°C 或局部紅腫超過 3 天請聯絡我們。</p>
+      </details>
+
+      <details class="reveal group border-b border-ink/10 pb-6">
+        <summary class="flex justify-between items-start gap-6 cursor-pointer">
+          <h3 class="font-display text-xl md:text-2xl text-ink">家人有多重慢性病，要怎麼幫他整合用藥？</h3>
+          <span class="font-display text-2xl text-honey-dark group-open:rotate-45 transition-transform">+</span>
+        </summary>
+        <p class="text-stone leading-[1.95] text-base mt-5">先幫他把家裡所有的藥（含保健食品）裝一袋帶來。我們會花 30-60 分鐘逐一檢視 — 有沒有重複、會不會交互作用、能不能停掉某些。整合後出一張對照表，下次回診給醫師看。建議事先 LINE 預約。</p>
+      </details>
+
+      <details class="reveal group border-b border-ink/10 pb-6">
+        <summary class="flex justify-between items-start gap-6 cursor-pointer">
+          <h3 class="font-display text-xl md:text-2xl text-ink">我不在這附近，可以宅配到別區嗎？</h3>
+          <span class="font-display text-2xl text-honey-dark group-open:rotate-45 transition-transform">+</span>
+        </summary>
+        <p class="text-stone leading-[1.95] text-base mt-5">配送目前以新莊區為主、泰山部分可達。其他地區可以宅配貨運（黑貓、便利商店店到店），運費另計。冷藏疫苗或特定藥品因保存條件不適合宅配。</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="relative py-24 md:py-32 px-6 md:px-10 bg-ink text-cream">
+  <div class="max-w-4xl mx-auto text-center">
+    <p class="text-xs tracking-[0.3em] uppercase text-honey mb-8 reveal">— 想預約服務</p>
+    <h2 class="font-display font-light text-4xl md:text-6xl text-cream mb-10 reveal reveal-d1">
+      LINE 上傳<br/>
+      <span class="italic text-honey">速度最快。</span>
+    </h2>
+    <a href="#" class="btn-primary bg-honey text-ink px-10 py-4 rounded-full text-sm tracking-wide font-medium inline-flex items-center gap-2 reveal reveal-d2">加入 LINE · 立即詢問</a>
+  </div>
+</section>
+
+</main>
+
+<footer class="bg-ink text-cream/50 px-6 md:px-10 py-12 border-t border-cream/10">
+  <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 text-xs tracking-wide">
+    <p>© 2026 小徑藥局 · Little Path Pharmacy · 健保特約字號 5901234567</p>
+    <p class="italic font-display">concept piece · design exploration</p>
+  </div>
+</footer>
+
+</body>
+</html>

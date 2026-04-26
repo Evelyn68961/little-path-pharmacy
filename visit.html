@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>來訪路徑 · 小徑藥局 Little Path</title>
+<meta name="description" content="新北市新莊區永寧街。從捷運新莊站步行 5 分鐘。週一至週六 09:00-21:00。" />
+<meta property="og:title" content="來訪路徑 · 小徑藥局" />
+<meta property="og:type" content="website" />
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&family=Klee+One:wght@400;600&family=Noto+Serif+TC:wght@400;500;600&display=swap" rel="stylesheet">
+<script type="module" src="/src/main.js"></script>
+</head>
+
+<body class="grain">
+
+<nav id="nav" class="fixed top-0 left-0 right-0 z-50 nav-blur">
+  <div class="max-w-7xl mx-auto px-6 md:px-10 h-20 flex items-center justify-between">
+    <a href="/" class="flex items-center gap-2.5">
+      <svg width="26" height="26" viewBox="0 0 32 32" fill="none" class="text-honey-dark">
+        <path d="M4 28 Q 12 22, 16 14 T 28 4" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+        <circle cx="28" cy="4" r="2.5" fill="#6B7454"/>
+        <circle cx="4" cy="28" r="2.5" fill="currentColor"/>
+      </svg>
+      <span class="font-display text-xl md:text-2xl font-medium text-ink tracking-tight">小徑<span class="font-display italic text-moss text-lg ml-1">Little Path</span></span>
+    </a>
+    <div class="hidden md:flex items-center gap-6 text-sm tracking-wide">
+      <a href="/about.html" class="link-u text-stone hover:text-ink">關於藥師</a>
+      <a href="/services.html" class="link-u text-stone hover:text-ink">服務項目</a>
+      <a href="/clinics.html" class="link-u text-stone hover:text-ink">合作診所</a>
+      <a href="/products.html" class="link-u text-stone hover:text-ink">店內品項</a>
+      <a href="/regulars.html" class="link-u text-stone hover:text-ink">老朋友專區</a>
+      <a href="/corner.html" class="link-u text-stone hover:text-ink">健康小角落</a>
+      <a href="/visit.html" class="link-u nav-active text-stone hover:text-ink">來訪路徑</a>
+      <a href="#contact" class="btn-primary bg-ink text-cream px-5 py-2.5 rounded-full text-sm">LINE 諮詢</a>
+    </div>
+    <button id="hamburger" class="md:hidden w-10 h-10 flex flex-col items-center justify-center gap-1.5" aria-label="Menu" aria-expanded="false" aria-controls="mobileMenu">
+      <span class="w-6 h-px bg-ink transition-transform duration-300"></span>
+      <span class="w-6 h-px bg-ink transition-opacity duration-300"></span>
+      <span class="w-6 h-px bg-ink transition-transform duration-300"></span>
+    </button>
+  </div>
+  <div id="mobileMenu" class="mobile-menu md:hidden fixed top-20 left-0 right-0 bg-cream border-t border-ink/10 px-6 py-8">
+    <div class="flex flex-col gap-6 text-lg">
+      <a href="/about.html" class="mobile-link text-stone">關於藥師</a>
+      <a href="/services.html" class="mobile-link text-stone">服務項目</a>
+      <a href="/clinics.html" class="mobile-link text-stone">合作診所</a>
+      <a href="/products.html" class="mobile-link text-stone">店內品項</a>
+      <a href="/regulars.html" class="mobile-link text-stone">老朋友專區</a>
+      <a href="/corner.html" class="mobile-link text-stone">健康小角落</a>
+      <a href="/visit.html" class="mobile-link text-stone">來訪路徑</a>
+      <a href="#contact" class="mobile-link btn-primary bg-ink text-cream px-6 py-3 rounded-full text-center text-base">LINE 諮詢</a>
+    </div>
+  </div>
+</nav>
+
+<main>
+
+<!-- PAGE HERO -->
+<section class="pt-32 md:pt-40 pb-16 md:pb-24 px-6 md:px-10 bg-paper">
+  <div class="max-w-7xl mx-auto grid md:grid-cols-12 gap-8 md:gap-16 items-end">
+    <div class="md:col-span-8">
+      <p class="text-xs tracking-[0.3em] uppercase text-honey-dark mb-6">— Page 06 / 來訪路徑</p>
+      <h1 class="font-display font-light text-5xl md:text-6xl lg:text-7xl text-ink leading-[1.05]">
+        在巷子的<br/>
+        <span class="italic text-moss-dark">第三個轉角。</span>
+      </h1>
+    </div>
+    <div class="md:col-span-4 md:pb-4">
+      <p class="text-stone leading-[1.95] text-base md:text-lg">
+        從捷運新莊站步行約 5 分鐘，沿著永寧街往南走，經過正在施工的工地，看見一棵大榕樹左轉，我們就在木門綠招牌的那一家。
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ADDRESS + MAP -->
+<section class="relative py-20 md:py-28 px-6 md:px-10 bg-cream">
+  <div class="max-w-7xl mx-auto grid md:grid-cols-12 gap-10 md:gap-16">
+    <div class="md:col-span-5 reveal">
+      <div class="space-y-6">
+        <div class="pb-6 border-b border-ink/10">
+          <p class="text-xs tracking-widest uppercase text-honey-dark mb-2">地址</p>
+          <p class="text-ink text-lg md:text-xl leading-snug">新北市新莊區<br/>永寧街 38 號</p>
+          <p class="text-stone text-sm mt-2">No. 38, Yongning St., Xinzhuang Dist., New Taipei City</p>
+        </div>
+        <div class="pb-6 border-b border-ink/10">
+          <p class="text-xs tracking-widest uppercase text-honey-dark mb-2">營業時間</p>
+          <ul class="text-ink text-base space-y-1.5 mt-2">
+            <li class="flex justify-between"><span>週一至週五</span><span>09:00 – 21:00</span></li>
+            <li class="flex justify-between"><span>週六</span><span>09:00 – 18:00</span></li>
+            <li class="flex justify-between text-stone"><span>週日</span><span>公休</span></li>
+          </ul>
+          <p class="text-stone text-sm mt-3">國定假日依公告 · 過年期間請見公告或 LINE 通知</p>
+        </div>
+        <div class="pb-6 border-b border-ink/10">
+          <p class="text-xs tracking-widest uppercase text-honey-dark mb-2">電話 · LINE</p>
+          <p class="text-ink text-base">(02) 2234-5678</p>
+          <p class="text-ink text-base">LINE ID · @littlepath</p>
+        </div>
+        <div>
+          <p class="text-xs tracking-widest uppercase text-honey-dark mb-2">Email</p>
+          <p class="text-ink text-base">hello@littlepath.tw</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="md:col-span-7 reveal reveal-d1">
+      <div class="aspect-[4/3] w-full bg-bone rounded-sm border border-ink/10 flex items-center justify-center relative overflow-hidden">
+        <svg class="absolute inset-0 w-full h-full opacity-40" viewBox="0 0 400 300" fill="none">
+          <path class="hand-line" d="M20 200 Q 100 180, 150 140 T 280 80 L 360 60" stroke="#6B7454" stroke-width="1.5" stroke-linecap="round"/>
+          <circle cx="360" cy="60" r="6" fill="#E8B75A"/>
+          <circle cx="20" cy="200" r="4" fill="#6B7454"/>
+        </svg>
+        <div class="relative text-center">
+          <p class="font-display italic text-moss text-2xl mb-2">小徑 · Little Path</p>
+          <p class="text-xs tracking-widest uppercase text-stone">here we are</p>
+        </div>
+      </div>
+      <p class="text-xs text-stone mt-3 italic">※ 實際嵌入時可換成 Google Maps iframe</p>
+    </div>
+  </div>
+</section>
+
+<!-- HOW TO GET HERE -->
+<section class="relative py-20 md:py-28 px-6 md:px-10 bg-paper">
+  <div class="max-w-6xl mx-auto">
+    <p class="reveal text-xs tracking-[0.3em] uppercase text-honey-dark mb-6">— 怎麼來 / Getting Here</p>
+    <h2 class="reveal font-display font-light text-4xl md:text-5xl text-ink leading-[1.15] mb-16">
+      四種方式，<br/>
+      <span class="italic text-moss-dark">看您方便。</span>
+    </h2>
+
+    <div class="grid md:grid-cols-2 gap-8 md:gap-10">
+
+      <article class="reveal bg-cream border border-ink/10 rounded-sm p-8">
+        <div class="flex items-start gap-4 mb-4">
+          <div class="w-12 h-12 rounded-full bg-honey/30 flex items-center justify-center shrink-0">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2B2418" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div>
+            <p class="font-display italic text-honey-dark text-sm">— Option 01</p>
+            <h3 class="font-display text-2xl text-ink">捷運</h3>
+          </div>
+        </div>
+        <p class="text-stone leading-[1.9] text-sm md:text-base">
+          中和新蘆線 · 新莊站 1 號出口出來，沿中正路往南走約 2 分鐘，左轉永寧街，再走 3 分鐘看到木門綠招牌（路上會經過正在施工的工地）。<br/>
+          <span class="text-ink">總計步行約 5 分鐘 / 400 公尺。</span>
+        </p>
+      </article>
+
+      <article class="reveal reveal-d1 bg-cream border border-ink/10 rounded-sm p-8">
+        <div class="flex items-start gap-4 mb-4">
+          <div class="w-12 h-12 rounded-full bg-honey/30 flex items-center justify-center shrink-0">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2B2418" stroke-width="1.5"><path d="M3 17h2l1 4h12l1-4h2v-3l-2-5H5l-2 5v3z" stroke-linecap="round" stroke-linejoin="round"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/></svg>
+          </div>
+          <div>
+            <p class="font-display italic text-honey-dark text-sm">— Option 02</p>
+            <h3 class="font-display text-2xl text-ink">公車</h3>
+          </div>
+        </div>
+        <p class="text-stone leading-[1.9] text-sm md:text-base">
+          「永寧街口」站下車 · 路線 638、801、893、橘 23、新北市新巴士 F236。<br/>
+          下車後沿永寧街走進巷內第三家就是。<br/>
+          <span class="text-ink">下車後步行 1 分鐘。</span>
+        </p>
+      </article>
+
+      <article class="reveal reveal-d2 bg-cream border border-ink/10 rounded-sm p-8">
+        <div class="flex items-start gap-4 mb-4">
+          <div class="w-12 h-12 rounded-full bg-honey/30 flex items-center justify-center shrink-0">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2B2418" stroke-width="1.5"><path d="M5 17h14l-2-9H7l-2 9z" stroke-linecap="round" stroke-linejoin="round"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/><path d="M9 8V5h6v3"/></svg>
+          </div>
+          <div>
+            <p class="font-display italic text-honey-dark text-sm">— Option 03</p>
+            <h3 class="font-display text-2xl text-ink">開車・機車</h3>
+          </div>
+        </div>
+        <p class="text-stone leading-[1.9] text-sm md:text-base">
+          門口可臨停 5 分鐘 · 拿藥不下車也可以，按喇叭我們出來。<br/>
+          長時間停車：永寧街路邊白線，或新莊副都心地下停車場（每小時 25 元）。<br/>
+          機車有專用停放區。
+        </p>
+      </article>
+
+      <article class="reveal reveal-d3 bg-cream border border-ink/10 rounded-sm p-8">
+        <div class="flex items-start gap-4 mb-4">
+          <div class="w-12 h-12 rounded-full bg-honey/30 flex items-center justify-center shrink-0">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2B2418" stroke-width="1.5"><circle cx="12" cy="10" r="3"/><path d="M12 2c-4 0-7 3-7 7 0 5 7 13 7 13s7-8 7-13c0-4-3-7-7-7z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div>
+            <p class="font-display italic text-honey-dark text-sm">— Option 04</p>
+            <h3 class="font-display text-2xl text-ink">不用來</h3>
+          </div>
+        </div>
+        <p class="text-stone leading-[1.9] text-sm md:text-base">
+          行動不便、剛手術、忙到走不開？<br/>
+          LINE 上傳處方箋，半徑 2 公里內 <span class="text-ink">免費宅配</span>。<br/>
+          範圍外可選宅配貨運（黑貓 / 7-11 店到店）。
+        </p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ACCESSIBILITY -->
+<section class="relative py-20 md:py-28 px-6 md:px-10 bg-bone">
+  <div class="max-w-5xl mx-auto">
+    <p class="reveal text-xs tracking-[0.3em] uppercase text-honey-dark mb-6">— 無障礙資訊 / Accessibility</p>
+    <h2 class="reveal font-display font-light text-3xl md:text-5xl text-ink leading-[1.15] mb-12">
+      讓每一位<br/>
+      <span class="italic text-moss-dark">都能進得來。</span>
+    </h2>
+
+    <ul class="reveal space-y-4 text-stone leading-[1.95] text-base md:text-lg max-w-3xl">
+      <li class="flex gap-4"><span class="text-honey-dark shrink-0">·</span><span>店門口無門檻，輪椅可直接推入。</span></li>
+      <li class="flex gap-4"><span class="text-honey-dark shrink-0">·</span><span>櫃檯設有低位諮詢檯，方便輪椅或長輩坐下對談。</span></li>
+      <li class="flex gap-4"><span class="text-honey-dark shrink-0">·</span><span>提供放大鏡、老花眼鏡借用，看清藥袋說明。</span></li>
+      <li class="flex gap-4"><span class="text-honey-dark shrink-0">·</span><span>會台語溝通。聽障朋友可用 LINE 文字或紙筆對談。</span></li>
+      <li class="flex gap-4"><span class="text-honey-dark shrink-0">·</span><span>陪同人員、看護、家屬全程歡迎在場。</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="relative py-24 md:py-32 px-6 md:px-10 bg-ink text-cream">
+  <div class="max-w-4xl mx-auto text-center">
+    <p class="text-xs tracking-[0.3em] uppercase text-honey mb-8 reveal">— 出發前</p>
+    <h2 class="font-display font-light text-4xl md:text-6xl text-cream mb-10 reveal reveal-d1">
+      LINE 一聲，<br/>
+      <span class="italic text-honey">我們先把藥備好。</span>
+    </h2>
+    <a href="#" class="btn-primary bg-honey text-ink px-10 py-4 rounded-full text-sm tracking-wide font-medium inline-flex items-center gap-2 reveal reveal-d2">加入 LINE · 立即詢問</a>
+  </div>
+</section>
+
+</main>
+
+<footer class="bg-ink text-cream/50 px-6 md:px-10 py-12 border-t border-cream/10">
+  <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 text-xs tracking-wide">
+    <p>© 2026 小徑藥局 · Little Path Pharmacy · 健保特約字號 5901234567</p>
+    <p class="italic font-display">concept piece · design exploration</p>
+  </div>
+</footer>
+
+</body>
+</html>

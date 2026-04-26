@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>關於藥師 · 小徑藥局 Little Path</title>
+<meta name="description" content="林佳穎藥師 · 1998 年從父親手中接下小徑藥局，二十多年來陪伴新莊區三代家庭。" />
+<meta property="og:title" content="關於藥師 · 小徑藥局" />
+<meta property="og:type" content="website" />
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&family=Klee+One:wght@400;600&family=Noto+Serif+TC:wght@400;500;600&display=swap" rel="stylesheet">
+<script type="module" src="/src/main.js"></script>
+</head>
+
+<body class="grain">
+
+<!-- NAV -->
+<nav id="nav" class="fixed top-0 left-0 right-0 z-50 nav-blur">
+  <div class="max-w-7xl mx-auto px-6 md:px-10 h-20 flex items-center justify-between">
+    <a href="/" class="flex items-center gap-2.5">
+      <svg width="26" height="26" viewBox="0 0 32 32" fill="none" class="text-honey-dark">
+        <path d="M4 28 Q 12 22, 16 14 T 28 4" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+        <circle cx="28" cy="4" r="2.5" fill="#6B7454"/>
+        <circle cx="4" cy="28" r="2.5" fill="currentColor"/>
+      </svg>
+      <span class="font-display text-xl md:text-2xl font-medium text-ink tracking-tight">小徑<span class="font-display italic text-moss text-lg ml-1">Little Path</span></span>
+    </a>
+    <div class="hidden md:flex items-center gap-6 text-sm tracking-wide">
+      <a href="/about.html" class="link-u nav-active text-stone hover:text-ink">關於藥師</a>
+      <a href="/services.html" class="link-u text-stone hover:text-ink">服務項目</a>
+      <a href="/clinics.html" class="link-u text-stone hover:text-ink">合作診所</a>
+      <a href="/products.html" class="link-u text-stone hover:text-ink">店內品項</a>
+      <a href="/regulars.html" class="link-u text-stone hover:text-ink">老朋友專區</a>
+      <a href="/corner.html" class="link-u text-stone hover:text-ink">健康小角落</a>
+      <a href="/visit.html" class="link-u text-stone hover:text-ink">來訪路徑</a>
+      <a href="#contact" class="btn-primary bg-ink text-cream px-5 py-2.5 rounded-full text-sm">LINE 諮詢</a>
+    </div>
+    <button id="hamburger" class="md:hidden w-10 h-10 flex flex-col items-center justify-center gap-1.5" aria-label="Menu" aria-expanded="false" aria-controls="mobileMenu">
+      <span class="w-6 h-px bg-ink transition-transform duration-300"></span>
+      <span class="w-6 h-px bg-ink transition-opacity duration-300"></span>
+      <span class="w-6 h-px bg-ink transition-transform duration-300"></span>
+    </button>
+  </div>
+  <div id="mobileMenu" class="mobile-menu md:hidden fixed top-20 left-0 right-0 bg-cream border-t border-ink/10 px-6 py-8">
+    <div class="flex flex-col gap-6 text-lg">
+      <a href="/about.html" class="mobile-link text-stone">關於藥師</a>
+      <a href="/services.html" class="mobile-link text-stone">服務項目</a>
+      <a href="/clinics.html" class="mobile-link text-stone">合作診所</a>
+      <a href="/products.html" class="mobile-link text-stone">店內品項</a>
+      <a href="/regulars.html" class="mobile-link text-stone">老朋友專區</a>
+      <a href="/corner.html" class="mobile-link text-stone">健康小角落</a>
+      <a href="/visit.html" class="mobile-link text-stone">來訪路徑</a>
+      <a href="#contact" class="mobile-link btn-primary bg-ink text-cream px-6 py-3 rounded-full text-center text-base">LINE 諮詢</a>
+    </div>
+  </div>
+</nav>
+
+<main>
+
+<!-- PAGE HERO -->
+<section class="pt-32 md:pt-40 pb-16 md:pb-24 px-6 md:px-10 bg-paper">
+  <div class="max-w-7xl mx-auto grid md:grid-cols-12 gap-8 md:gap-16 items-end">
+    <div class="md:col-span-8">
+      <p class="text-xs tracking-[0.3em] uppercase text-honey-dark mb-6">— Page 01 / 關於藥師</p>
+      <h1 class="font-display font-light text-5xl md:text-6xl lg:text-7xl text-ink leading-[1.05]">
+        藥，是科學。<br/>
+        但藥局，是<span class="italic text-moss-dark">人的地方</span>。
+      </h1>
+    </div>
+    <div class="md:col-span-4 md:pb-4">
+      <p class="text-stone leading-[1.95] text-base md:text-lg">
+        這一頁，是關於一位藥師、一家從 1982 年開到現在的小店、和一條走了三代人的巷子。
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- PHARMACIST FULL BIO -->
+<section class="relative py-20 md:py-32 px-6 md:px-10 bg-cream">
+  <div class="max-w-7xl mx-auto grid md:grid-cols-12 gap-10 md:gap-16 items-center">
+    <div class="md:col-span-5 reveal">
+      <div class="relative">
+        <div class="absolute -top-4 -left-4 w-full h-full border border-honey/60 rounded-sm hidden md:block"></div>
+        <div class="pharmacist-img relative aspect-[4/5] w-full rounded-sm"></div>
+      </div>
+    </div>
+    <div class="md:col-span-7 reveal reveal-d1">
+      <p class="text-xs tracking-[0.3em] uppercase text-honey-dark mb-6">— Our Pharmacist</p>
+      <h2 class="font-display font-light text-4xl md:text-5xl text-ink leading-[1.15] mb-10">
+        林佳穎<br/>
+        <span class="italic text-moss-dark text-3xl md:text-4xl">Pharmacist Lin Chia-Ying</span>
+      </h2>
+      <div class="space-y-5 text-stone leading-[1.95] text-base md:text-lg max-w-xl">
+        <p>1998 年從父親手中接下這家店。那年我 29 歲，他 64 歲。我做的第一件事，是把店裡的檯燈全換成暖色調 — 我希望走進來的人，第一眼看到的不是藥架，是光。</p>
+        <p>父親是 1982 年開的店。那時候社區剛蓋好沒幾年，他在巷口擺一張小桌子，幫鄰居量血壓、解釋藥袋。後來生意大了，蓋成現在的木門綠招牌。</p>
+        <p>二十多年了，很多阿公阿嬤從前是爸爸照顧的，現在換我。他們帶著孫子進來，孫子拿著藥袋，眼神跟當年他們一樣害怕。</p>
+        <p class="text-ink font-medium pt-1">我希望這裡永遠是那種 — 您可以慢慢問、慢慢聊的地方。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PHILOSOPHY -->
+<section class="relative py-24 md:py-32 px-6 md:px-10 bg-paper">
+  <div class="max-w-5xl mx-auto">
+    <p class="reveal text-xs tracking-[0.3em] uppercase text-honey-dark mb-6">— 我們相信的事 / What We Believe</p>
+    <h2 class="reveal font-display font-light text-4xl md:text-5xl text-ink leading-[1.15] mb-16">
+      三件事，<br/>
+      <span class="italic text-moss-dark">放在心上二十年。</span>
+    </h2>
+
+    <div class="space-y-12 md:space-y-16">
+      <div class="reveal grid md:grid-cols-12 gap-6 md:gap-10 pb-12 md:pb-16 border-b border-ink/10">
+        <div class="md:col-span-3">
+          <p class="font-display italic text-honey-dark text-3xl md:text-4xl">一</p>
+        </div>
+        <div class="md:col-span-9">
+          <h3 class="font-display text-2xl md:text-3xl text-ink mb-4">藥袋上的字，要看得懂。</h3>
+          <p class="text-stone leading-[1.95] text-base md:text-lg">每一張我們開的藥袋，都用最大的字寫上「飯前 / 飯後」、「一天幾次」、「會不會想睡」。專業術語退到第二行 — 第一行是阿嬤要看的。</p>
+        </div>
+      </div>
+
+      <div class="reveal reveal-d1 grid md:grid-cols-12 gap-6 md:gap-10 pb-12 md:pb-16 border-b border-ink/10">
+        <div class="md:col-span-3">
+          <p class="font-display italic text-honey-dark text-3xl md:text-4xl">二</p>
+        </div>
+        <div class="md:col-span-9">
+          <h3 class="font-display text-2xl md:text-3xl text-ink mb-4">不夠用的藥，不亂賣。</h3>
+          <p class="text-stone leading-[1.95] text-base md:text-lg">您不需要的保健食品，我不會推薦。如果一天三餐均衡，B 群可能就不用買。我們情願少賣一樣，也不要您回家後覺得被推銷。</p>
+        </div>
+      </div>
+
+      <div class="reveal reveal-d2 grid md:grid-cols-12 gap-6 md:gap-10">
+        <div class="md:col-span-3">
+          <p class="font-display italic text-honey-dark text-3xl md:text-4xl">三</p>
+        </div>
+        <div class="md:col-span-9">
+          <h3 class="font-display text-2xl md:text-3xl text-ink mb-4">問問題，不收費。</h3>
+          <p class="text-stone leading-[1.95] text-base md:text-lg">您站在門口想問一句話，我們就出來。不買任何東西也沒關係。藥師的責任是把話說清楚，不是把商品賣出去。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CREDENTIALS + STATS -->
+<section class="relative py-24 md:py-32 px-6 md:px-10 bg-bone">
+  <div class="max-w-7xl mx-auto">
+    <p class="reveal text-xs tracking-[0.3em] uppercase text-honey-dark mb-6">— 經歷 · 數字 / By the Numbers</p>
+    <h2 class="reveal font-display font-light text-4xl md:text-5xl text-ink leading-[1.15] mb-16 max-w-3xl">
+      四十餘年，<br/>
+      <span class="italic text-moss-dark">寫成一些可以查證的事。</span>
+    </h2>
+
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 mb-20">
+      <div class="reveal">
+        <p class="font-display text-5xl md:text-6xl text-ink mb-3">42<span class="text-honey-dark text-2xl ml-1">年</span></p>
+        <p class="text-stone text-sm tracking-wide">社區服務</p>
+      </div>
+      <div class="reveal reveal-d1">
+        <p class="font-display text-5xl md:text-6xl text-ink mb-3">3,200<span class="text-honey-dark text-2xl ml-1">+</span></p>
+        <p class="text-stone text-sm tracking-wide">服務家庭</p>
+      </div>
+      <div class="reveal reveal-d2">
+        <p class="font-display text-5xl md:text-6xl text-ink mb-3">800<span class="text-honey-dark text-2xl ml-1">+</span></p>
+        <p class="text-stone text-sm tracking-wide">月平均諮詢人次</p>
+      </div>
+      <div class="reveal reveal-d3">
+        <p class="font-display text-5xl md:text-6xl text-ink mb-3">4.9<span class="text-honey-dark text-2xl ml-1">★</span></p>
+        <p class="text-stone text-sm tracking-wide">Google 評價</p>
+      </div>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-x-12 gap-y-8 pt-10 border-t border-ink/10">
+      <div class="reveal">
+        <p class="text-xs tracking-widest uppercase text-honey-dark mb-2">學歷</p>
+        <p class="text-ink text-base md:text-lg">台北醫學大學 藥學系 學士 (1991-1996)</p>
+      </div>
+      <div class="reveal reveal-d1">
+        <p class="text-xs tracking-widest uppercase text-honey-dark mb-2">執業</p>
+        <p class="text-ink text-base md:text-lg">藥師字第 028XXXX 號 · 執業 26 年</p>
+      </div>
+      <div class="reveal">
+        <p class="text-xs tracking-widest uppercase text-honey-dark mb-2">公會職務</p>
+        <p class="text-ink text-base md:text-lg">新北市藥師公會理事 (2020 - 迄今)</p>
+      </div>
+      <div class="reveal reveal-d1">
+        <p class="text-xs tracking-widest uppercase text-honey-dark mb-2">專長</p>
+        <p class="text-ink text-base md:text-lg">老年用藥整合 · 慢性病諮詢 · 母嬰用藥</p>
+      </div>
+      <div class="reveal">
+        <p class="text-xs tracking-widest uppercase text-honey-dark mb-2">繼續教育</p>
+        <p class="text-ink text-base md:text-lg">台大醫院 高齡藥事照護課程 (2019)</p>
+      </div>
+      <div class="reveal reveal-d1">
+        <p class="text-xs tracking-widest uppercase text-honey-dark mb-2">語言</p>
+        <p class="text-ink text-base md:text-lg">中文 · 台語 · 簡單英文</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="relative py-24 md:py-32 px-6 md:px-10 bg-ink text-cream">
+  <div class="max-w-4xl mx-auto text-center">
+    <p class="text-xs tracking-[0.3em] uppercase text-honey mb-8 reveal">— 想聊聊嗎</p>
+    <h2 class="font-display font-light text-4xl md:text-6xl text-cream mb-10 reveal reveal-d1">
+      歡迎來店，<br/>
+      或先<span class="italic text-honey">傳個 LINE</span>。
+    </h2>
+    <a href="#" class="btn-primary bg-honey text-ink px-10 py-4 rounded-full text-sm tracking-wide font-medium inline-flex items-center gap-2 reveal reveal-d2">加入 LINE · 立即詢問</a>
+  </div>
+</section>
+
+</main>
+
+<footer class="bg-ink text-cream/50 px-6 md:px-10 py-12 border-t border-cream/10">
+  <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 text-xs tracking-wide">
+    <p>© 2026 小徑藥局 · Little Path Pharmacy · 健保特約字號 5901234567</p>
+    <p class="italic font-display">concept piece · design exploration</p>
+  </div>
+</footer>
+
+</body>
+</html>
