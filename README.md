@@ -106,7 +106,7 @@ The article template (nav, hero, byline, related-articles footer) lives in `scri
 
 - **Tailwind v4, CSS-first config.** Theme lives in `@theme { ... }` in `main.css`. No `tailwind.config.js`, no PostCSS config.
 - **Explicit `@source` paths.** `@source "../*.html"` and `@source "../articles/*.html"` in `main.css` — without these, Vite's module graph only surfaces `index.html` and Tailwind purges classes used by subpages.
-- **Fraunces × Klee One.** Fraunces handles Latin (display + body), Klee One handles CJK. Klee One is a soft schoolbook handwriting style that pairs warmly with Fraunces — both have a slightly hand-drawn quality that fits the "neighborhood pharmacist" voice.
+- **Fraunces × Klee One.** Fraunces handles Latin (display + body), Klee One handles CJK. Klee One is a soft schoolbook handwriting style that pairs warmly with Fraunces. Klee One only ships 2 real weights (400 + 600), so `main.css` re-declares it via custom `@font-face` rules with **extended `font-weight` ranges** (`100 500` mapped to the 400 file, `501 900` mapped to the 600 file). Any request for `font-light` / `font-medium` / `font-bold` resolves to one of those two files instead of falling back to Noto Serif TC. Files load from the Fontsource CDN.
 - **`font-feature-settings: "palt"`.** Proportional metrics for CJK — tightens kerning so Latin and Chinese read at the same rhythm.
 - **`cubic-bezier(0.22, 1, 0.36, 1)`.** A single easing curve used everywhere. Fast out, gentle settle.
 - **IntersectionObserver over scroll listeners.** Much cheaper, more accurate, degrades gracefully.

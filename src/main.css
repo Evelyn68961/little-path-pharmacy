@@ -24,8 +24,29 @@
   --color-ink: #2B2418;
   --color-stone: #6B6454;
 
-  --font-display: "Fraunces", "Klee One", "Noto Serif TC", serif;
-  --font-serif: "Fraunces", "Klee One", "Noto Serif TC", serif;
+  --font-display: "Fraunces", "Klee One", "LXGW WenKai TC", "Noto Serif TC", serif;
+  --font-serif: "Fraunces", "Klee One", "LXGW WenKai TC", "Noto Serif TC", serif;
+}
+
+/* ============================================================
+   Klee One — re-declared with extended font-weight ranges so any
+   font-light / font-medium / font-bold request resolves to one of
+   Klee One's two real files (400 or 600) instead of falling back to
+   Noto Serif TC. Files served from the Fontsource CDN.
+   ============================================================ */
+@font-face {
+  font-family: 'Klee One';
+  font-style: normal;
+  font-weight: 100 500;
+  font-display: swap;
+  src: url('https://cdn.jsdelivr.net/fontsource/fonts/klee-one@latest/japanese-400-normal.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Klee One';
+  font-style: normal;
+  font-weight: 501 900;
+  font-display: swap;
+  src: url('https://cdn.jsdelivr.net/fontsource/fonts/klee-one@latest/japanese-600-normal.woff2') format('woff2');
 }
 
 /* ============================================================
