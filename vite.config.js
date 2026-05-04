@@ -2,6 +2,7 @@ import { defineConfig } from 'vite'
 import tailwindcss from '@tailwindcss/vite'
 import { resolve } from 'path'
 import articlesPlugin from './scripts/vite-plugin-articles.js'
+import partialsPlugin from './scripts/vite-plugin-partials.js'
 import { buildArticles } from './scripts/build-articles.js'
 
 // Build articles synchronously at config-time so we know which generated
@@ -14,7 +15,7 @@ const articleInputs = Object.fromEntries(
 )
 
 export default defineConfig({
-  plugins: [tailwindcss(), articlesPlugin()],
+  plugins: [tailwindcss(), partialsPlugin(), articlesPlugin()],
   build: {
     outDir: 'dist',
     assetsInlineLimit: 4096,

@@ -1,0 +1,45 @@
+<nav id="nav" class="fixed top-0 left-0 right-0 z-50 nav-blur">
+  <div class="max-w-7xl mx-auto px-6 md:px-10 h-20 flex items-center justify-between">
+    <a href="/" class="flex items-center gap-2.5">
+      <svg width="26" height="26" viewBox="0 0 32 32" fill="none" class="text-honey-dark">
+        <path d="M4 28 Q 12 22, 16 14 T 28 4" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+        <circle cx="28" cy="4" r="2.5" fill="#6B7454"/>
+        <circle cx="4" cy="28" r="2.5" fill="currentColor"/>
+      </svg>
+      <span class="font-display text-xl md:text-2xl font-medium text-ink tracking-tight">小徑<span class="font-display italic text-moss text-lg ml-1">Little Path</span></span>
+    </a>
+
+    <div class="hidden lg:flex items-center gap-6 text-sm tracking-wide">
+      <a href="/about.html" class="link-u text-stone hover:text-ink">關於藥師</a>
+      <a href="/services.html" class="link-u text-stone hover:text-ink">服務項目</a>
+      <a href="/clinics.html" class="link-u text-stone hover:text-ink">合作診所</a>
+      <a href="/products.html" class="link-u text-stone hover:text-ink">店內品項</a>
+      <a href="/regulars.html" class="link-u text-stone hover:text-ink">老朋友專區</a>
+      <a href="/corner.html" class="link-u text-stone hover:text-ink">健康小角落</a>
+      <a href="/visit.html" class="link-u text-stone hover:text-ink">來訪路徑</a>
+      <a href="#contact" class="btn-primary bg-ink text-cream px-5 py-2.5 rounded-full text-sm inline-flex items-center gap-2">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M19.365 9.863c.349 0 .63.285.631.635 0 .351-.282.635-.631.635H17.61v1.125h1.755c.349 0 .63.283.63.634 0 .351-.281.635-.63.635h-2.389c-.346 0-.627-.285-.627-.635V8.108c0-.349.281-.634.63-.634h2.389c.346 0 .627.285.627.634 0 .351-.281.635-.63.635H17.61v1.12h1.755zm-3.855 3.367c0 .274-.176.52-.437.609-.066.022-.136.033-.207.033-.195 0-.373-.088-.491-.237l-2.392-3.255v2.851c0 .349-.282.635-.63.635-.348 0-.629-.286-.629-.635V8.108c0-.274.175-.52.436-.606.062-.022.137-.036.207-.036.195 0 .373.085.491.237l2.406 3.267V8.108c0-.349.282-.634.629-.634.348 0 .63.285.63.634v5.122zm-6.142 0c0 .349-.282.635-.629.635-.348 0-.63-.286-.63-.635V8.108c0-.349.282-.634.63-.634.347 0 .629.285.629.634v5.122zm-1.32-1.25h-2.373v-3.872c0-.349-.282-.634-.63-.634-.348 0-.63.285-.63.634v5.122c0 .349.282.635.63.635h2.373c.349 0 .63-.286.63-.635 0-.351-.281-.634-.63-.634l-.77.016zM12 0C5.373 0 0 4.367 0 9.74c0 4.82 4.259 8.857 10.013 9.621.39.084.92.258 1.054.592.121.303.079.778.039 1.085l-.171 1.027c-.053.303-.242 1.187 1.039.647 1.281-.54 6.911-4.069 9.428-6.967C23.395 14.783 24 12.34 24 9.74 24 4.367 18.627 0 12 0" fill="currentColor"/></svg>
+        LINE 諮詢
+      </a>
+    </div>
+
+    <button id="hamburger" class="lg:hidden w-10 h-10 flex flex-col items-center justify-center gap-1.5" aria-label="Menu" aria-expanded="false" aria-controls="mobileMenu">
+      <span class="w-6 h-px bg-ink transition-transform duration-300"></span>
+      <span class="w-6 h-px bg-ink transition-opacity duration-300"></span>
+      <span class="w-6 h-px bg-ink transition-transform duration-300"></span>
+    </button>
+  </div>
+
+  <div id="mobileMenu" class="mobile-menu lg:hidden fixed top-20 left-0 right-0 bg-cream border-t border-ink/10 px-6 py-8">
+    <div class="flex flex-col gap-6 text-lg">
+      <a href="/about.html" class="mobile-link text-stone">關於藥師</a>
+      <a href="/services.html" class="mobile-link text-stone">服務項目</a>
+      <a href="/clinics.html" class="mobile-link text-stone">合作診所</a>
+      <a href="/products.html" class="mobile-link text-stone">店內品項</a>
+      <a href="/regulars.html" class="mobile-link text-stone">老朋友專區</a>
+      <a href="/corner.html" class="mobile-link text-stone">健康小角落</a>
+      <a href="/visit.html" class="mobile-link text-stone">來訪路徑</a>
+      <a href="#contact" class="mobile-link btn-primary bg-ink text-cream px-6 py-3 rounded-full text-center text-base">LINE 諮詢</a>
+    </div>
+  </div>
+</nav>

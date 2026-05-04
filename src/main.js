@@ -1,6 +1,21 @@
 import './main.css'
 
 /* ============================================================
+   Active nav link — mark the link matching the current URL so the
+   gold underline shows. Article pages count as "健康小角落".
+   ============================================================ */
+const currentPath = window.location.pathname
+const isArticle = currentPath.startsWith('/articles/')
+document.querySelectorAll('#nav a[href]').forEach((a) => {
+  const href = a.getAttribute('href')
+  const matches = href === currentPath || (isArticle && href === '/corner.html')
+  if (matches && a.classList.contains('link-u')) {
+    a.classList.add('nav-active')
+    a.setAttribute('aria-current', 'page')
+  }
+})
+
+/* ============================================================
    Mobile menu hamburger toggle
    ============================================================ */
 const hamburger = document.getElementById('hamburger')
